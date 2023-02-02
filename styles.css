@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "myriad-pro";
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     background: #d8d0c3;
 }
 
@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "myriad-pro";
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
 }
 
@@ -114,7 +114,7 @@ body {
 #banner-text {
     margin: 0;
     color: #313239;
-    font-family: "myriad-pro";
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     font-weight: 900;
     font-style: italic;
@@ -131,6 +131,84 @@ body {
     transform: translate(10px, 0px);
 }
 
+/* #content-wrapper {
+
+} */
+
+#section1 {
+    background-color: #19191d;
+    justify-content: center;
+    display: flex;
+    padding: 6.5px;
+}
+
+#store-img {
+    width: 60vw;
+    height: auto;
+    border-radius: 1vw;
+    margin: 6.5px;
+}
+
+#section1-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 25vw;
+    margin: 6.5px;
+    background-color: #313239;
+    border-radius: 1vw;
+    text-align: center;
+    color: #d8d0c3;
+}
+
+#section1-side h1 {
+    font-size: 5vw;
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: 3.5vw 0 0;
+}
+
+#section1-side h2 {
+    font-size: 2vw;
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin: 1.5vw 0 0.5vw;
+}
+
+#section1-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.week {
+    display: flex;
+    justify-content: center;
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    font-size: 1vw;
+}
+
+.week p {
+    margin: 0 0.5vw;
+}
+
+.week-dates p {
+    text-align: right;
+}
+
+.week-days p {
+    text-align: center;
+}
+
+.hours p {
+    text-align: left;
+}
+
 #footer {
     background-color: #313239;
     padding: 25px;
@@ -142,22 +220,7 @@ body {
 #footer p {
     color: #d8d0c3;
     text-align: center;
-    font-family: "myriad-pro";
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     margin: 0;
-}
-
-/* #content-wrapper {
-
-} */
-
-#section1 {
-    background-color: #19191d;
-    text-align: center;
-    padding: 13px 0;
-}
-
-#store-img {
-    width: 75%;
-    border-radius: 1rem;
 }
