@@ -184,7 +184,9 @@ body {
 
 .week {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     list-style-type: none;
@@ -197,15 +199,22 @@ body {
     margin: 0 0.5vw;
 }
 
-.week-dates p {
+.day-row {
+    display: flex;
+    margin-right: 0.5vw;
+}
+
+.date {
     text-align: right;
+    width: 2.5vw;
 }
 
-.week-days p {
+.day {
     text-align: center;
+    width: 2vw;
 }
 
-.hours p {
+.hour {
     text-align: left;
 }
 
