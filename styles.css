@@ -204,6 +204,11 @@ body {
     margin-right: 0.5vw;
 }
 
+.day-row p {
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
 .date {
     text-align: right;
     width: 2.5vw;
