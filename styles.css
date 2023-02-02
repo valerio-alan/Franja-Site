@@ -24,6 +24,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 25px);
+    transition: all 0.5s;
+    transition-timing-function: ease;
 }
 
 #header a {
