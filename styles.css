@@ -207,7 +207,7 @@ body {
 .day-row p {
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    margin: 0 0.5vw;
+    line-height: 1.25vw;
 }
 
 .date {
