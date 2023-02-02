@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-f5f0f93d-3dc8-4f7f-9778-09e0dd269ba2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.9 26.9">
+  <defs>
+    <style>
+      .uuid-c2121b90-086c-4aba-9c99-911a70f082c0 {
+        fill: none;
+        stroke: #19191d;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .uuid-7875929f-e813-4b74-b324-8fe46c539e51 {
+        fill: #d8d0c3;
+      }
+    </style>
+  </defs>
+  <circle class="uuid-7875929f-e813-4b74-b324-8fe46c539e51" cx="13.45" cy="13.45" r="13.45"/>
+  <line class="uuid-c2121b90-086c-4aba-9c99-911a70f082c0" x1="8.75" y1="18.15" x2="18.15" y2="8.75"/>
+  <line class="uuid-c2121b90-086c-4aba-9c99-911a70f082c0" x1="18.15" y1="18.15" x2="8.75" y2="8.75"/>
+</svg>

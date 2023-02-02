@@ -14,7 +14,6 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1;
 }
 
 #header {
@@ -79,31 +78,47 @@ body {
 }
 
 #banner-wrapper {
+    overflow: auto;
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 125px;
+    position: fixed;
+    background: #19191dcc;
+    z-index: 1;
 }
 
 #banner {
     background-color: #9297ac;
-    border-radius: 6px;
-    padding: 10px 20px;
+    border-radius: 15px;
+    padding: 32px 50px 35px;
     text-decoration: none;
+    position: relative;
     margin: 15px;
     box-shadow: 0 0 20px #19191d;
+}
+
+#banner-exit {
+    width: 40px;
+    position: absolute;
+    top: -17.5px;
+    right: -17.5px;
+    cursor: pointer;
+}
+
+#banner a {
+    text-decoration: none;
 }
 
 #banner-text {
     margin: 0;
     color: #313239;
-    line-height: 25px;
     font-family: "myriad-pro";
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 900;
     font-style: italic;
+    text-align: center;
 }
 
 #main-logo {
@@ -137,8 +152,9 @@ body {
 } */
 
 #section1 {
-    background-color: #313239;
+    background-color: #19191d;
     text-align: center;
+    padding: 13px 0;
 }
 
 #store-img {
