@@ -342,7 +342,6 @@ body {
         font-size: 10vw;
         margin: 0 0 -4vw;
         padding-bottom: 2vw;
-        /* border-bottom: none; */
     }
     
     #section1-side h2 {
@@ -359,6 +358,10 @@ body {
     
     .hour-set {
         padding: 2vw 0vw 3vw;
+    }
+
+    #hour-divider {
+        border-right: 0.25vw dashed #d8d0c3;
     }
     
     .week {
