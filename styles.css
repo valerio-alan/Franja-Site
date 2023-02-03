@@ -256,6 +256,8 @@ body {
 
     #footer {
         justify-content: center;
+        padding: 1.5vw;
+        width: calc(100% - 3vw);
     }
 }
 
@@ -263,11 +265,15 @@ body {
     #header-contact-info {
         display: none;
     }
+
+    #footer p {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 350px) {
     #main-logo {
-        width: 50vw;
+        width: 40vw;
     }
 
     #header-contact-btn {
@@ -276,5 +282,9 @@ body {
 
     #header {
         justify-content: center;
+    }
+
+    #footer p {
+        font-size: 9px;
     }
 }
