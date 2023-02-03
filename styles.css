@@ -391,7 +391,8 @@ body {
     #hour-divider {
         overflow: hidden;
         border-left: 0.5vw dashed #d8d0c3;
-        margin: 0 6vw 0 6vw;
+        height: 45vw;
+        margin: 0 6vw;
     }
     
     .week {
