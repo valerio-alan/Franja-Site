@@ -263,6 +263,23 @@ body {
     #main-logo {
         width: 200px;
     }
+    
+    #banner {
+        border-radius: 1.6vw;
+        padding: 3.1vw 4.8vw 3.36vw;
+        top: -10vw;
+        margin: 1vw;
+    }
+    
+    #banner-exit {
+        width: 3.84vw;
+        top: -1.68vw;
+        right: -1.68vw;
+    }
+    
+    #banner-text {
+        font-size: 3.84vw;
+    }
 
     #footer {
         justify-content: center;
@@ -274,6 +291,20 @@ body {
 @media screen and (max-width: 600px) {
     #main-logo {
         width: 150px;
+    }
+    
+    #banner {
+        top: -30vw;
+    }
+    
+    #banner-exit {
+        width: 7.68vw;
+        top: -3.36vw;
+        right: -3.36vw;
+    }
+    
+    #banner-text {
+        font-size: 7.68vw;
     }
 
     #header-contact-info {
@@ -369,6 +400,10 @@ body {
 @media screen and (max-width: 350px) {
     #main-logo {
         width: 40vw;
+    }
+    
+    #banner {
+        top: -50vw;
     }
 
     #header-contact-btn {
