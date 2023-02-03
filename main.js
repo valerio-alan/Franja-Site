@@ -27,7 +27,7 @@ window.onscroll = function() {
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const today = new Date()
 const monthDay = today.toLocaleDateString("en-US", {month: "2-digit", day: "2-digit"})
-const dayOfWeek = daysOfWeek[today.getUTCDay()]
+const dayOfWeek = daysOfWeek[today.getDay()]
 var datesOfWeek = []
 
 for (let i = 0; i < 7; i++) {
@@ -42,6 +42,7 @@ for (let i = 0; i < 7; i++) {
 
 const dayEls = document.getElementsByClassName(dayOfWeek)
 for (let i = 0; i < dayEls.length; i++) {
-    dayEls[i].style.fontWeight = "900"
-    dayEls[i].style.color = "#bec1cd"
+    dayEls[i].style.fontWeight = "600"
+    dayEls[i].style.color = "#19191d"
+    dayEls[i].style.background = "#d8d0c3"
 }
