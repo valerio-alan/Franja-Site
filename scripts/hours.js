@@ -11,8 +11,8 @@ for (let i = 0; i < 7; i++) {
     date.setDate(date.getDate() - date.getDay() + i)
     let month = date.getMonth() + 1 // 0-indexed, so add 1
     let day = date.getDate()
-    document.querySelectorAll(`.${daysOfWeek[i]}.date`)[0].textContent = month + "/" + day
-    document.querySelectorAll(`.${daysOfWeek[i]}.date`)[1].textContent = month + "/" + day
+    // document.querySelectorAll(`.${daysOfWeek[i]}.date`)[0].textContent = month + "/" + day
+    // document.querySelectorAll(`.${daysOfWeek[i]}.date`)[1].textContent = month + "/" + day
     datesOfWeek.push(month + "/" + day)
 }
 
