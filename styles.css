@@ -51,22 +51,14 @@ body {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     font-style: italic;
-    transition: all 0.2s;
-    transition-timing-function: ease-in-out;
-}
-
-.header-btn:hover {
-    background: #b5b0a8;
-    transform: translate(0px, -5px);
-    box-shadow: 0px 5px 5px #19191d;
 }
 
 .header-text {
     color: #d8d0c3;
-    line-height: 25px;
+    font-size: 15px;
 }
 
 .header-text p {
@@ -119,16 +111,6 @@ body {
     font-weight: 900;
     font-style: italic;
     text-align: center;
-}
-
-#main-logo {
-    width: 250px;
-    transition: all 0.2s;
-    transition-timing-function: ease-in-out;
-}
-
-#main-logo:hover {
-    transform: translate(10px, 0px);
 }
 
 /* #content-wrapper {
@@ -231,7 +213,7 @@ body {
 
 #footer {
     background-color: #313239;
-    padding: 25px;
+    padding: 1.5vw 25px;
     display: flex;
     align-items: center;
     width: calc(100% - 50px);
@@ -239,8 +221,60 @@ body {
 
 #footer p {
     color: #d8d0c3;
-    text-align: center;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     margin: 0;
+}
+
+@media screen and (min-width: 801px) {
+    #main-logo {
+        width: 250px;
+        transition: transform 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    #main-logo:hover {
+        transform: translate(10px, 0px);
+    }
+
+    .header-btn {
+        transition: transform 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .header-btn:hover {
+        background: #b5b0a8;
+        transform: translate(0px, -5px);
+        box-shadow: 0px 5px 5px #19191d;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #main-logo {
+        width: 150px;
+    }
+
+    #footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header-contact-info {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #main-logo {
+        width: 50vw;
+    }
+
+    #header-contact-btn {
+        display: none;
+    }
+
+    #header {
+        justify-content: center;
+    }
 }

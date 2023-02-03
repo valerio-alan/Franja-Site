@@ -43,4 +43,5 @@ for (let i = 0; i < 7; i++) {
 const dayEls = document.getElementsByClassName(dayOfWeek)
 for (let i = 0; i < dayEls.length; i++) {
     dayEls[i].style.fontWeight = "900"
+    dayEls[i].style.color = "#bec1cd"
 }
