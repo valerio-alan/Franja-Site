@@ -249,9 +249,9 @@ body {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
     #main-logo {
-        width: 150px;
+        width: 200px;
     }
 
     #footer {
@@ -262,6 +262,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    #main-logo {
+        width: 150px;
+    }
+
     #header-contact-info {
         display: none;
     }
