@@ -362,6 +362,7 @@ body {
 
     #hour-divider {
         border-right: 0.25vw dashed #d8d0c3;
+        width: 0.01vw;
         height: 44vw;
     }
     
