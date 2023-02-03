@@ -390,7 +390,7 @@ body {
 
     #store {
         padding-right: 6vw;
-        border-right: 0.5vw dashed #d8d0c3;
+        border-right: 0.5vw solid #d8d0c3;
     }
 
     #delivery {
