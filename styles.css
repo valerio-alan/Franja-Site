@@ -123,8 +123,8 @@ body {
 }
 
 #store-img {
-    width: 60vw;
-    height: auto;
+    width: auto;
+    height: 42.02vw;
     border-radius: 1vw;
     margin: 6.5px;
 }
@@ -239,14 +239,14 @@ body {
     }
 
     .header-btn {
-        transition: transform 0.2s;
+        transition: all 0.2s;
         transition-timing-function: ease-in-out;
     }
 
     .header-btn:hover {
         background: #b5b0a8;
-        transform: translate(0px, -5px);
-        box-shadow: 0px 5px 5px #19191d;
+        transform: translate(-5px, 0px);
+        box-shadow: 2.5px 0px 5px #19191d;
     }
 
     .header-text {
@@ -280,6 +280,7 @@ body {
         justify-content: center;
         padding: 2vw;
         width: calc(100% - 4vw);
+        font-size: 14px;
     }
 }
 
@@ -289,7 +290,7 @@ body {
     }
     
     #banner {
-        top: -30vw;
+        top: -25vw;
     }
     
     #banner-exit {
@@ -351,6 +352,7 @@ body {
 
     #store-img {
         width: calc(100% - 2vw);
+        height: auto;
         margin: 1vw;
     }
     
