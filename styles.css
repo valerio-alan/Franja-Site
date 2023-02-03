@@ -380,7 +380,7 @@ body {
     
     #section1-hours {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         margin: 5vw 0 1vw;
     }
     
@@ -388,11 +388,13 @@ body {
         padding: 2vw 0vw 3vw;
     }
 
-    #hour-divider {
-        overflow: hidden;
-        border-left: 0.5vw dashed #d8d0c3;
-        height: 45vw;
-        margin: 0 6vw;
+    #store {
+        padding-right: 6vw;
+        border-right: 0.5vw dashed #d8d0c3;
+    }
+
+    #delivery {
+        padding-left: 6vw;
     }
     
     .week {
