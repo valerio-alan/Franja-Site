@@ -67,7 +67,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 25px);
-    transition: all 0.5s;
+    transition: box-shadow 0.5s;
     transition-timing-function: ease;
 }
 
@@ -305,6 +305,11 @@ body {
     
     #banner-text {
         font-size: 7.68vw;
+    }
+
+    #header {
+        padding: 10px 6.25px;
+        width: calc(100% - 12.5px);
     }
 
     #header-contact-info {
