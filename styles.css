@@ -369,7 +369,7 @@ body {
         font-size: 10vw;
         margin: 0 0 -4vw;
         padding-bottom: 2vw;
-        border-bottom: 0.25vw dashed #d8d0c3;
+        border-bottom: 0.5vw dashed #d8d0c3;
     }
     
     #section1-side h2 {
@@ -390,8 +390,7 @@ body {
 
     #hour-divider {
         overflow: hidden;
-        border-left: 0.25vw dashed #d8d0c3;
-        border-width: 0.25vw;
+        border-left: 0.5vw dashed #d8d0c3;
         margin: 0 6vw 0 6vw;
     }
     
