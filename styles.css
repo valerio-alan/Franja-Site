@@ -114,10 +114,6 @@ body {
     text-align: right;
 }
 
-/* #content-wrapper {
-
-} */
-
 #section1 {
     background-color: #19191d;
     justify-content: center;
@@ -152,7 +148,7 @@ body {
     font-style: italic;
     margin: 0;
     padding-bottom: 0.5vw;
-    border-bottom: 0.25vw solid #d8d0c3;
+    border-bottom: 0.25vw dashed #d8d0c3;
 }
 
 #section1-side h2 {
@@ -160,7 +156,6 @@ body {
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     margin: 0.75vw 0 0.5vw;
-    text-decoration: underline;
 }
 
 #section1-hours {
@@ -375,7 +370,6 @@ body {
     #section1-side h2 {
         font-size: 5vw;
         margin: 0 0 1.5vw;
-        text-decoration: none;
     }
     
     #section1-hours {
