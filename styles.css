@@ -27,6 +27,7 @@ body {
     position: relative;
     margin: 1vw;
     box-shadow: 0 0 1.2vw #19191d;
+    max-width: 80%;
 }
 
 #banner-exit {
