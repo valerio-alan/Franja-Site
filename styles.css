@@ -380,7 +380,7 @@ body {
     
     #section1-hours {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         margin: 5vw 0 1vw;
     }
     
