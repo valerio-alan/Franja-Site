@@ -1,4 +1,5 @@
 // get current date and day of week
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const today = new Date()
 const monthDay = today.toLocaleDateString("en-US", {month: "2-digit", day: "2-digit"})
