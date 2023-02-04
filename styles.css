@@ -216,24 +216,6 @@ body {
     text-align: left;
 }
 
-/* #section2 {
-    background-color: #d8d0c3;
-    display: flex;
-    justify-content: center;
-    padding: 6.5px;
-    width: 100%;
-} */
-
-/* #about-us-wrapper {
-    background-color: #313239;
-    display: flex;
-    flex-direction: column;
-    margin: 6.5px;
-    border-radius: 1vw;
-    color: #d8d0c3;
-    width: calc(100% - 11.4vw);
-} */
-
 #about-us-wrapper {
     background-color: #d8d0c3;
     display: flex;
@@ -270,7 +252,7 @@ body {
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     font-style: italic;
-    margin: 0 1vw;
+    margin: 0 1.5vw;
     padding-bottom: 0.5vw;
 }
 
@@ -284,7 +266,7 @@ body {
 }
 
 #about-us-text p {
-    margin: 1vw;
+    margin: 0.5vw;
 }
 
 #about-us-slides {
