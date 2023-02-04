@@ -5,18 +5,18 @@ html {
 body {
     margin: 0;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
-    background: #d8d0c3;
+    background: #19191d;
 }
 
 #banner-wrapper {
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
     position: fixed;
     background: #19191dcc;
-    z-index: 1;
+    z-index: 2;
 }
 
 #banner {
@@ -58,6 +58,7 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 #header {
@@ -116,7 +117,6 @@ body {
 }
 
 #section1 {
-    background-color: #19191d;
     justify-content: center;
     display: flex;
     padding: 6.5px;
@@ -133,13 +133,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 25vw;
+    width: 23vw;
     margin: 6.5px;
     background-color: #313239;
     border-radius: 1vw;
     text-align: center;
     color: #d8d0c3;
-    padding: 1vw 0;
+    padding: 1vw;
 }
 
 #section1-side h1 {
@@ -210,6 +210,86 @@ body {
 .hour {
     text-align: left;
 }
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    padding: 6.5px;
+    padding-top: 0;
+}
+
+#about-us-wrapper {
+    background-color: #313239;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6.5px;
+    border-radius: 1vw;
+    color: #d8d0c3;
+    padding: 0.5vw 1vw;
+    width: calc(100% - 14vw);
+}
+
+#about-us {
+    padding: 0.5vw 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-us-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-us-title {
+    display: flex;
+    width: auto;
+    border-bottom: 0.25vw dashed #d8d0c3;
+    white-space: nowrap;
+}
+
+#about-us-title h1 {
+    font-size: 5vw;
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 1vw;
+    padding-bottom: 0.5vw;
+}
+
+#about-us-text {
+    width: 42.2vw;
+    font-size: 1.2vw;
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    margin: 0 1vw;
+    padding-bottom: 0.5vw;
+}
+
+#about-us-slides {
+    background: #19191d;
+    width: 39vw;
+    height: 26.6vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide {
+    width: 39vw;
+    height: auto;
+    display: none;
+    animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade-out {
+    from {opacity: 1} 
+    to {opacity: 0}
+  }
 
 #footer {
     background-color: #313239;
@@ -429,4 +509,77 @@ body {
     .day {
         width: 6vw;
     }
+
+    #section2 {
+        display: flex;
+        justify-content: center;
+        padding: 1vw;
+        padding-top: 0;
+    }
+    
+    #about-us-wrapper {
+        padding: 0.5vw 0;
+        width: calc(100% - 2vw);
+        margin: 0 0 1vw;
+    }
+    
+    #about-us {
+        padding: 1vw 0;
+        flex-direction: column-reverse;
+    }
+    
+    #about-us-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #about-us-title {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        border-bottom: 0.5vw solid #d8d0c3;
+        border-top: 0.5vw solid #d8d0c3;
+        white-space: nowrap;
+    }
+    
+    #about-us-title h1 {
+        font-size: 10vw;
+        font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        margin: 0 2vw;
+        padding-bottom: 0.5vw;
+    }
+    
+    #about-us-text {
+        font-size: 3vw;
+        font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+        margin: 0 auto;
+        padding: 0 5vw 0.5vw;
+        width: auto;
+        text-align: left;
+    }
+    
+    #about-us-text p {
+        margin-top: 3.5vw;
+        margin-bottom: 2vw;
+    }
+    
+    #about-us-slides {
+        background: #19191d;
+        width: 93.3vw;
+        height: 40vw;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin: 0 auto 2vw;
+    }
+    
+    .slide {
+        width: 93.3vw;
+        height: auto;
+        display: none;
+        animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
+      }
 }

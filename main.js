@@ -1,10 +1,10 @@
-// hide banner if empty or set to null or none
+// init banner and show if not empty
 var bannerText = document.getElementById('banner')
 var bannerWrapper = document.getElementById('banner-wrapper')
 
-if (bannerText.textContent.trim().toLowerCase() == "none" || bannerText.textContent.trim().toLocaleLowerCase() == "null" || !bannerText.textContent.trim().length) {
+if (bannerText.textContent.trim().toLowerCase() != "none" || bannerText.textContent.trim().toLocaleLowerCase() != "null" || bannerText.textContent.trim().length) {
     console.log("Banner is empty, hiding element")
-    bannerWrapper.style.display = 'none'
+    bannerWrapper.style.display = 'flex'
 }
 
 // hide banner when clicked
