@@ -16,7 +16,7 @@ body {
     align-items: center;
     position: fixed;
     background: #19191dcc;
-    z-index: 2;
+    z-index: 4;
 }
 
 #banner {
@@ -58,7 +58,7 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 #header {
@@ -82,6 +82,11 @@ body {
     align-items: center;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
+}
+
+.popped {
+    box-shadow: 0 0 3px black;
+    z-index: 2;
 }
 
 #main-logo {
@@ -211,38 +216,51 @@ body {
     text-align: left;
 }
 
-#section2 {
+/* #section2 {
+    background-color: #d8d0c3;
     display: flex;
     justify-content: center;
     padding: 6.5px;
-    padding-top: 0;
-}
+    width: 100%;
+} */
 
-#about-us-wrapper {
+/* #about-us-wrapper {
     background-color: #313239;
     display: flex;
     flex-direction: column;
-    margin-bottom: 6.5px;
+    margin: 6.5px;
     border-radius: 1vw;
     color: #d8d0c3;
-    padding: 0.5vw 1vw;
-    width: calc(100% - 14vw);
+    width: calc(100% - 11.4vw);
+} */
+
+#about-us-wrapper {
+    background-color: #d8d0c3;
+    display: flex;
+    justify-content: center;
+    padding: 6.5px;
 }
 
 #about-us {
-    padding: 0.5vw 0;
+    background-color: #313239;
     display: flex;
-    justify-content: space-between;
+    padding: 6.5px;
+    border-radius: 1vw;
+    color: #d8d0c3;
+    width: fit-content;
+    margin: 6.5px;
+    justify-content: center;
 }
 
 #about-us-info {
     display: flex;
     flex-direction: column;
+    width: auto;
+    margin: 0.65vw;
 }
 
 #about-us-title {
     display: flex;
-    width: auto;
     border-bottom: 0.25vw dashed #d8d0c3;
     white-space: nowrap;
 }
@@ -262,13 +280,18 @@ body {
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     margin: 0 1vw;
-    padding-bottom: 0.5vw;
+    line-height: 1.6vw;
+}
+
+#about-us-text p {
+    margin: 1vw;
 }
 
 #about-us-slides {
     background: #19191d;
     width: 39vw;
     height: 26.6vw;
+    margin: 0.65vw;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -510,21 +533,16 @@ body {
         width: 6vw;
     }
 
-    #section2 {
+    #about-us-wrapper {
         display: flex;
         justify-content: center;
         padding: 1vw;
-        padding-top: 0;
-    }
-    
-    #about-us-wrapper {
-        padding: 0.5vw 0;
-        width: calc(100% - 2vw);
-        margin: 0 0 1vw;
     }
     
     #about-us {
-        padding: 1vw 0;
+        width: calc(100% - 4vw);
+        margin: 1vw;
+        padding: 2vw;
         flex-direction: column-reverse;
     }
     
@@ -556,9 +574,10 @@ body {
         font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 400;
         margin: 0 auto;
-        padding: 0 5vw 0.5vw;
+        padding: 0 2vw 0.5vw;
         width: auto;
         text-align: left;
+        line-height: 4vw;
     }
     
     #about-us-text p {
@@ -568,7 +587,7 @@ body {
     
     #about-us-slides {
         background: #19191d;
-        width: 93.3vw;
+        width: 92vw;
         height: 40vw;
         display: flex;
         align-items: center;
@@ -577,7 +596,7 @@ body {
     }
     
     .slide {
-        width: 93.3vw;
+        width: 92vw;
         height: auto;
         display: none;
         animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
