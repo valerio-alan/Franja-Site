@@ -24,7 +24,7 @@ body {
     border-radius: 1vw;
     padding: 1.92vw 3vw 2.1vw;
     text-decoration: none;
-    position: relative;
+    position: absolute;
     margin: 1vw;
     box-shadow: 0 0 1.2vw #19191d;
     max-width: 80%;
@@ -284,17 +284,17 @@ body {
     height: auto;
     display: none;
     animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
-  }
+}
   
-  @keyframes fade-in {
+@keyframes fade-in {
     from {opacity: 0} 
     to {opacity: 1}
-  }
+}
   
-  @keyframes fade-out {
+@keyframes fade-out {
     from {opacity: 1} 
     to {opacity: 0}
-  }
+}
 
 #footer {
     background-color: #313239;
@@ -347,7 +347,6 @@ body {
     #banner {
         border-radius: 1.6vw;
         padding: 3.1vw 4.8vw 3.36vw;
-        top: -10vw;
         margin: 1vw;
     }
     
@@ -372,10 +371,6 @@ body {
 @media screen and (max-width: 600px) {
     #main-logo {
         width: 150px;
-    }
-    
-    #banner {
-        top: -25vw;
     }
     
     #banner-exit {
@@ -409,10 +404,6 @@ body {
 @media screen and (max-width: 350px) {
     #main-logo {
         width: 40vw;
-    }
-    
-    #banner {
-        top: -50vw;
     }
 
     #header-contact-btn {
