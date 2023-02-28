@@ -13,7 +13,7 @@ fetch('banner.json').then(b => b.text()).then(b => {
             bannerLink.setAttribute("target", "_blank")
         }
     } else {
-        console.log("Banner is empty, hiding element")
+        console.log("👁 | Banner is empty, keeping it hidden")
     }
 })
 
