@@ -16,7 +16,6 @@ function drawHours(hours) {
         let deliveryTimes = hours.deliveryHours[weekDayNum]
         if (hours[`${month}-${date}`] != undefined) {
             if (hours[`${month}-${date}`].closed) {
-                document.querySelectorAll(`.Day${i+1}.day-row`).forEach(item => {item.classList.add("closed-row")})
                 storeTimes = false
                 deliveryTimes = false
             } else {
