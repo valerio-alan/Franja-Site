@@ -1,20 +1,25 @@
 {
     "storeHours": [
-        "12:00 pm - 09:00 pm",
-        "12:00 pm - 10:00 pm",
-        "12:00 pm - 10:00 pm",
-        "12:00 pm - 10:00 pm",
-        "12:00 pm - 10:00 pm",
-        "11:00 am - 10:00 pm",
-        "11:00 am - 10:00 pm"
+        "12 pm - 9 pm",
+        "12 pm - 10 pm",
+        "12 pm - 10 pm",
+        "12 pm - 10 pm",
+        "12 pm - 10 pm",
+        "11 am - 10 pm",
+        "11 am - 10 pm"
     ],
     "deliveryHours": [
         "No Deliveries",
-        "12:00 pm - 09:00 pm",
-        "12:00 pm - 09:00 pm",
-        "12:00 pm - 09:00 pm",
-        "12:00 pm - 09:00 pm",
-        "11:00 am - 09:00 pm",
-        "11:00 am - 09:00 pm"
-    ]
+        "12 pm - 9 pm",
+        "12 pm - 9 pm",
+        "12 pm - 9 pm",
+        "12 pm - 9 pm",
+        "11 am - 9 pm",
+        "11 am - 9 pm"
+    ],
+    "00-00": {
+        "store": "Closed",
+        "delivery": "Closed",
+        "closed" : true
+    }
 }

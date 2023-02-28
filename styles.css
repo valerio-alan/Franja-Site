@@ -183,7 +183,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     list-style-type: none;
     text-align: center;
@@ -191,8 +190,19 @@ body {
     font-size: 1.2vw;
 }
 
-.week p {
-    margin: 0 0.5vw;
+.highlighted-row {
+    font-weight: 800;
+    color: #19191d;
+    background: #d8d0c3;
+}
+
+.highlighted-row .date {
+    border-color: #19191d;
+}
+
+.closed-row {
+    font-weight: 800;
+    background: #d4797933;
 }
 
 .day-row {
@@ -201,19 +211,25 @@ body {
 }
 
 .day-row p {
-    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
+    font-family: "droid-sans-mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    white-space: pre-wrap;
     line-height: 1.5vw;
+    letter-spacing: -0.0075vw;
+    font-size: 1vw;
+    padding: 0 0.5vw;
+    margin: 0px;
 }
 
 .date {
-    text-align: right;
-    width: 2.5vw;
+    text-align: center;
+    border: solid #d8d0c3;
+    border-width: 0 1px;
 }
 
 .day {
     text-align: right;
-    width: 2.15vw;
 }
 
 .hour {
@@ -494,27 +510,17 @@ body {
         font-size: 3vw;
     }
     
-    .week p {
-        margin: 0 1vw;
-    }
-    
     .day-row {
         display: flex;
         margin: 0 0.6vw;
     }
     
     .day-row p {
-        font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 400;
-        line-height: 4.5vw;
-    }
-    
-    .date {
-        width: 7vw;
-    }
-    
-    .day {
-        width: 6vw;
+        line-height: 4vw;
+        letter-spacing: -0.065vw;
+        font-size: 2.4vw;
+        padding: 0 1vw;
+        margin: 0px;
     }
 
     #about-us-wrapper {
