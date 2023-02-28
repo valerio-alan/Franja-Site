@@ -1,17 +1,3 @@
-// init banner and show if not empty
-var bannerText = document.getElementById('banner')
-var bannerWrapper = document.getElementById('banner-wrapper')
-
-if (bannerText.textContent.trim().toLowerCase() != "none" || bannerText.textContent.trim().toLocaleLowerCase() != "null" || bannerText.textContent.trim().length) {
-    console.log("Banner is empty, hiding element")
-    bannerWrapper.style.display = 'flex'
-}
-
-// hide banner when clicked
-function hideBanner() {
-    bannerWrapper.style.display = 'none'
-}
-
 // shadow under header when scrolled
 var headerEl = document.getElementById("header")
 

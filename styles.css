@@ -47,9 +47,13 @@ body {
     color: #313239;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.4vw;
-    font-weight: 900;
+    font-weight: 600;
     font-style: italic;
     text-align: center;
+}
+
+#banner-text span {
+    font-weight: 800;
 }
 
 #header-wrapper {
@@ -218,6 +222,13 @@ body {
 
 #about-us-wrapper {
     background-color: #d8d0c3;
+    display: flex;
+    justify-content: center;
+    padding: 6.5px;
+}
+
+#about-us-wrapper2 {
+    background-color: #19191d;
     display: flex;
     justify-content: center;
     padding: 6.5px;
