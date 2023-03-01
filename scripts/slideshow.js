@@ -1,9 +1,8 @@
 let slideIndex = 0
 
 function showSlides() {
-  let i
   let slides = document.getElementsByClassName("slide")
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none"
   }
   slideIndex++
