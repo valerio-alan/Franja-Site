@@ -12,6 +12,7 @@ fetch('https://franjaapi-1-v0251088.deta.app/banner').then(b => b.text()).then(b
             bannerLink.setAttribute("href", banner.link)
             bannerLink.setAttribute("target", "_blank")
         }
+        console.log("👁 | Banner has been loaded")
     } else {
         console.log("👁 | Banner is empty, keeping it hidden")
     }
