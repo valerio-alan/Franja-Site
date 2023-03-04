@@ -8,33 +8,40 @@ function drawHours(hours) {
         tempDate.setDate(tempDate.getDate() + i - 1)
         let month = tempDate.toLocaleDateString("en-US", {month: "2-digit"})
         let date = tempDate.toLocaleDateString("en-US", {day: "2-digit"})
+        let year = tempDate.toLocaleDateString("en-US", {year: "numeric"})
         let weekDayNum = tempDate.getDay()
         let day = daysOfWeek[weekDayNum]
         document.querySelectorAll(`.Day${i+1}.date`).forEach(item => {item.textContent = month + "/" + date})
         document.querySelectorAll(`.Day${i+1}.day`).forEach(item => {item.textContent = day})
-        let storeTimes = hours.storeHours[weekDayNum]
-        let deliveryTimes = hours.deliveryHours[weekDayNum]
-        if (hours[`${month}-${date}`] != undefined) {
-            if (hours[`${month}-${date}`].closed) {
+        let storeTimes = hours.storeHours[day]
+        let deliveryTimes = hours.deliveryHours[day]
+        if (`${month}-${date}` in hours.specialHours.all || (hours.specialHours[year] != undefined && `${month}-${date}` in hours.specialHours[year])) {
+            console.log(`${month}-${date}`)
+            if (hours.specialHours[year] != undefined && `${month}-${date}` in hours.specialHours[year]) {
+                var monthDayHours = hours.specialHours[year][`${month}-${date}`]
+            } else {
+                var monthDayHours = hours.specialHours["all"][`${month}-${date}`]
+            }
+            if (monthDayHours.closed) {
                 storeTimes = false
                 deliveryTimes = false
             } else {
-                if (hours[`${month}-${date}`].store != undefined && hours[`${month}-${date}`].store !== true) {
-                    storeTimes = hours[`${month}-${date}`].store
+                if (monthDayHours.store != undefined && monthDayHours.store !== true) {
+                    storeTimes = monthDayHours.store
                 }
-                if (hours[`${month}-${date}`].delivery != undefined && hours[`${month}-${date}`].delivery !== true) {
-                    deliveryTimes = hours[`${month}-${date}`].delivery
+                if (monthDayHours.delivery != undefined && monthDayHours.delivery !== true) {
+                    deliveryTimes = monthDayHours.delivery
                 }
             }
         }
         if (!storeTimes) {
-            storeTimes = hours.storeClosed
+            storeTimes = hours.storeClosedMsg
             if (i != 1) {
                 document.querySelectorAll(`.Day${i+1}.day-row`)[0].classList.add("closed-row")
             }
         }
         if (!deliveryTimes) {
-            deliveryTimes = hours.deliveryClosed
+            deliveryTimes = hours.deliveryClosedMsg
             if (i != 1) {
                 document.querySelectorAll(`.Day${i+1}.day-row`)[1].classList.add("closed-row")
             }
@@ -47,7 +54,10 @@ function drawHours(hours) {
     }
 }
 
-fetch('hours.json').then(h => h.text()).then(h => {
+fetch('http://18.116.18.132:8080/hours').then(h => h.text()).then(h => {
     const json = JSON.parse(h)
     drawHours(json)
-})
+}).catch(error => {
+    console.error('Error:', error)
+    console.error("👁 | Hours are broken")
+  })

@@ -3,7 +3,7 @@ const bannerText = document.getElementById('banner-text')
 const bannerLink = document.getElementById('banner-link')
 const bannerWrapper = document.getElementById('banner-wrapper')
 
-fetch('banner.json').then(b => b.text()).then(b => {
+fetch('http://18.116.18.132:8080/banner').then(b => b.text()).then(b => {
     const banner = JSON.parse(b)
     if (banner.text) {
         bannerText.innerHTML = banner.text
@@ -15,7 +15,10 @@ fetch('banner.json').then(b => b.text()).then(b => {
     } else {
         console.log("👁 | Banner is empty, keeping it hidden")
     }
-})
+}).catch(error => {
+    console.error('Error:', error)
+    console.error("👁 | Banner is broken, keeping it hidden")
+  })
 
 // hide banner when clicked
 function hideBanner() {
