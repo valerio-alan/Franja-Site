@@ -54,7 +54,7 @@ function drawHours(hours) {
     }
 }
 
-fetch('http://18.116.18.132:8080/hours').then(h => h.text()).then(h => {
+fetch('https://franjaapi-1-v0251088.deta.app/hours').then(h => h.text()).then(h => {
     const json = JSON.parse(h)
     drawHours(json)
 }).catch(error => {

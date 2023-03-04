@@ -3,7 +3,7 @@ const bannerText = document.getElementById('banner-text')
 const bannerLink = document.getElementById('banner-link')
 const bannerWrapper = document.getElementById('banner-wrapper')
 
-fetch('http://18.116.18.132:8080/banner').then(b => b.text()).then(b => {
+fetch('https://franjaapi-1-v0251088.deta.app/banner').then(b => b.text()).then(b => {
     const banner = JSON.parse(b)
     if (banner.text) {
         bannerText.innerHTML = banner.text
