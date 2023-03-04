@@ -16,7 +16,7 @@ function drawHours(hours) {
         let storeTimes = hours.storeHours[day]
         let deliveryTimes = hours.deliveryHours[day]
         if (`${month}-${date}` in hours.specialHours.all || (hours.specialHours[year] != undefined && `${month}-${date}` in hours.specialHours[year])) {
-            console.log(`${month}-${date}`)
+            console.log(`${month}-${date} has been modified`)
             if (hours.specialHours[year] != undefined && `${month}-${date}` in hours.specialHours[year]) {
                 var monthDayHours = hours.specialHours[year][`${month}-${date}`]
             } else {
