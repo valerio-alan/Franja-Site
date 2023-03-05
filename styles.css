@@ -196,7 +196,7 @@ body {
     background: #d8d0c3;
 }
 
-.highlighted-row .date {
+.highlighted-row .date, .highlighted-row .day{
     border-color: #19191d;
 }
 
@@ -224,12 +224,15 @@ body {
 
 .date {
     text-align: center;
-    border: solid #d8d0c3;
-    border-width: 0 1px;
+    border: solid #d8d0c3 0px;
+    border-right-width: 1px;
+    display: none;
 }
 
 .day {
     text-align: right;
+    border: solid #d8d0c3 0px;
+    border-right-width: 1px;
 }
 
 .hour {

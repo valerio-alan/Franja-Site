@@ -3,6 +3,7 @@ const today = new Date()
 const dayOfWeek = daysOfWeek[today.getDay()]
 
 function drawHours(hours) {
+    document.querySelectorAll(`.date`).forEach(item => {item.style.display = 'inline'})
     for (let i = 0; i < 7; i++) {
         let tempDate = new Date()
         tempDate.setDate(tempDate.getDate() + i - 1)
@@ -55,10 +56,14 @@ function drawHours(hours) {
 }
 
 fetch('https://franjaapi-1-v0251088.deta.app/hours').then(h => h.text()).then(h => {
-    const json = JSON.parse(h)
-    drawHours(json)
+    const data = JSON.parse(h)
+    drawHours(data)
     console.log("👁 | Hours have been loaded")
 }).catch(error => {
-    console.error('Error:', error)
-    console.error("👁 | Hours are broken")
+    console.error("👁 | Hours are broken, using backup")
+    fetch('franja.json').then(h => h.text()).then(h => {
+        const data = JSON.parse(h)
+        const dataHours = data.hours
+        drawHours(dataHours)
+    })
   })

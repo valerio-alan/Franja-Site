@@ -1,0 +1,40 @@
+{
+	"banner": {
+		"text": "",
+		"link": ""
+	},
+	"hours": {
+		"storeClosedMsg": "Closed",
+		"deliveryClosedMsg": "No Deliveries",
+		"maxChars": 13,
+
+		"storeHours": {
+			"Sun": "12 pm - 9 pm",
+			"Mon": "12 pm - 10 pm",
+			"Tue": "12 pm - 10 pm",
+			"Wed": "12 pm - 10 pm",
+			"Thu": "12 pm - 10 pm",
+			"Fri": "11 am - 10 pm",
+			"Sat": "11 am - 10 pm"
+		},
+		"deliveryHours": {
+			"Sun": false,
+			"Mon": "12 pm - 9 pm",
+			"Tue": "12 pm - 9 pm",
+			"Wed": "12 pm - 9 pm",
+			"Thu": "12 pm - 9 pm",
+			"Fri": "12 pm - 9 pm",
+			"Sat": "12 pm - 9 pm"
+		},
+		"specialHours": {
+			"all": {
+				"01-01": {
+					"closed": true
+				},
+				"12-25": {
+					"closed": true
+				}
+			}
+		}
+	}
+}
