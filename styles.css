@@ -294,7 +294,7 @@ body {
 
 #about-us-slides {
     background: #19191d;
-    width: 39vw;
+    width: 100%;
     height: 26.6vw;
     margin: 0.65vw;
     display: flex;
@@ -526,6 +526,7 @@ body {
         margin: 1vw;
         padding: 2vw;
         flex-direction: column-reverse;
+        position: relative;
     }
     
     #about-us-info {
@@ -569,7 +570,7 @@ body {
     
     #about-us-slides {
         background: #19191d;
-        width: 92vw;
+        width: 100%;
         height: 40vw;
         display: flex;
         align-items: center;
@@ -578,8 +579,7 @@ body {
     }
     
     .slide {
-        width: 92vw;
-        height: auto;
+        width: inherit;
         display: none;
         animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
       }
