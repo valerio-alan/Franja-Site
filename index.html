@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div id="intro-wrapper">
+      <img id="intro-logo" src="images/franja-logo.svg" alt="Franja Wines and Liquors Logo">
+    </div>
+
     <div id="banner-wrapper" onclick="hideBanner()">
       <div id="banner">
         <img id="banner-exit" src="images/exit-button.svg" alt="Exit Button">
@@ -50,7 +54,11 @@
 
       <div id="section1">
 
-        <img class="popped" id="store-img" src="images/storefront.webp" alt="Franja Liquors storefront">
+        <div class="slides popped" id="sec1-slides">
+          <img class="slide" src="images/slide1.webp">
+          <img class="slide" src="images/slide2.webp">
+          <img class="slide" src="images/slide3.webp">
+        </div>
 
         <div class="popped" id="section1-side">
           <h1>Hours</h1>
@@ -155,11 +163,7 @@
               </p>
             </div>
           </div>
-          <div class="text-img-img" id="about-us-slides">
-            <img class="slide" src="images/slide1.webp">
-            <img class="slide" src="images/slide2.webp">
-            <img class="slide" src="images/slide3.webp">
-          </div>
+          <div class="text-img-img" id="about-us-img"></div>
         </div>
       </div>
 

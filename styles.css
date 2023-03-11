@@ -8,6 +8,46 @@ body {
     background: #19191d;
 }
 
+#intro-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #313239;
+    z-index: 4;
+    animation: 1s fade-out 0.5s ease-in-out, 0.1s intro-hide 1.5s linear;
+    animation-fill-mode: forwards;
+}
+
+#intro-logo {
+    opacity: 0;
+    width: 20vmin;
+    animation: 1.5s intro-in 0s cubic-bezier(0,.75,1,1);
+    animation-fill-mode: forwards;
+}
+  
+@keyframes intro-in {
+    from {
+        opacity: 0;
+        width: 20vmin;
+    } 
+    to {
+        opacity: 1;
+        width: 80vmin;
+    }
+}
+  
+@keyframes intro-hide {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 100%;
+    }
+}
+
 #banner-wrapper {
     display: none;
     width: 100%;
@@ -131,11 +171,28 @@ body {
     padding: 6.5px;
 }
 
-#store-img {
-    width: auto;
+#sec1-slides {
+    width: 60.8vw;
     height: 42.02vw;
     border-radius: 1vw;
     margin: 6.5px;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+    animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
+}
+  
+@keyframes fade-in {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+  
+@keyframes fade-out {
+    from {opacity: 1} 
+    to {opacity: 0}
 }
 
 #section1-side {
@@ -292,31 +349,19 @@ body {
     margin: 0.5vw;
 }
 
-#about-us-slides {
-    background: #19191d;
-    width: 100%;
+#about-us-img {
+    background-image: url(images/storefront.webp);
+    background-size: cover;
+    width: 39vw;
     height: 26.6vw;
     margin: 0.65vw;
+}
+
+.slides {
+    background: #19191d;
     display: flex;
     align-items: center;
     overflow: hidden;
-}
-
-.slide {
-    width: 39vw;
-    height: auto;
-    display: none;
-    animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
-}
-  
-@keyframes fade-in {
-    from {opacity: 0} 
-    to {opacity: 1}
-}
-  
-@keyframes fade-out {
-    from {opacity: 1} 
-    to {opacity: 0}
 }
 
 #footer {
@@ -449,10 +494,16 @@ body {
         padding: 1vw;
     }
 
-    #store-img {
+    #sec1-slides {
         width: calc(100% - 2vw);
         height: auto;
         margin: 1vw;
+    }
+    
+    .slide {
+        width: 100%;
+        display: none;
+        animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
     }
     
     #section1-side {
@@ -568,19 +619,10 @@ body {
         margin-bottom: 2vw;
     }
     
-    #about-us-slides {
-        background: #19191d;
+    #about-us-img {
+        background-position: 0% 15%;
         width: 100%;
-        height: 40vw;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
+        height: 50vw;
         margin: 0 auto 2vw;
     }
-    
-    .slide {
-        width: inherit;
-        display: none;
-        animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
-      }
 }
