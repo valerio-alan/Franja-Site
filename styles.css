@@ -16,7 +16,7 @@ body {
     align-items: center;
     position: fixed;
     background: #313239;
-    z-index: 4;
+    z-index: 100;
     animation: 1s fade-out 0.5s ease-in-out, 0.1s intro-hide 1.5s linear;
     animation-fill-mode: forwards;
 }
@@ -24,17 +24,15 @@ body {
 #intro-logo {
     opacity: 0;
     width: 20vmin;
-    animation: 1.5s intro-in 0s cubic-bezier(0,.75,1,1);
+    animation: 1.5s fade-in 0s linear, 1.5s intro-in 0s cubic-bezier(0,.75,1,1);
     animation-fill-mode: forwards;
 }
   
 @keyframes intro-in {
     from {
-        opacity: 0;
         width: 20vmin;
     } 
     to {
-        opacity: 1;
         width: 80vmin;
     }
 }
@@ -57,6 +55,8 @@ body {
     position: fixed;
     background: #19191dcc;
     z-index: 4;
+    animation: 0.1s fade-in 0s cubic-bezier(0,.75,1,1);
+    animation-fill-mode: forwards;
 }
 
 #banner {
