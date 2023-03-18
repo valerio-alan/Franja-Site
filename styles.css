@@ -6,7 +6,10 @@ body {
     margin: 0;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     background: #19191d;
-    /* background-image: linear-gradient(#19191d 20%, #313239, #696767, #a09b95, #d8d0c3); */
+}
+
+#content-wrapper {
+    background-image: linear-gradient(#19191d 20%, #313239, #696767, #a09b95, #d8d0c3);
 }
 
 #intro-wrapper {
@@ -307,57 +310,64 @@ body {
     align-items: center;
     text-align: center;
     height: 30vw;
+    background: #19191d4a;
+    /* background: #313239; */
 }
 
-#drizly {
-    /* background: #696767; */
+.perks-main-img {
+    height: 100%;
 }
 
-#reviews {
-    /* background: #a09b95; */
-}
-
-#pc {
-    background: #313239;
-}
-
-#pc-img {
+.perks-main-img img{
     height: 100%;
     aspect-ratio: 1/1;
 }
 
-#pc-info {
+.perks-info {
     width: 42.2vw;
 }
 
-#pc-title {
+.perks-title {
     width: 100%;
     white-space: nowrap;
 }
 
-#pc-title h1{
+.perks-title h1{
     width: 100%;
     margin: 0;
 }
 
-#pc-text-img {
+.perks-text-img {
     display: none;
 }
 
-#pc-text {
+.perks-text {
     margin: 0 1vw;
     color: #d8d0c3;
 }
 
-#pc-text p {
+.perks-text p {
     font-size: 1.7vw;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     margin: 0.5vw;
 }
 
+#drizly {
+    flex-direction: row-reverse;
+}
+
+#d-text p a {
+    color: #e6e1da;
+    font-weight: 600;
+}
+
+.spacer {
+    height: 13px;
+}
+
 #about-us-wrapper {
-    background: #d8d0c3;
+    /* background: #d8d0c3; */
     display: flex;
     justify-content: center;
     padding: 6.5px;
@@ -603,7 +613,6 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 400;
         list-style-type: none;
         text-align: center;
@@ -624,40 +633,42 @@ body {
         margin: 0;
     }
 
-    #pc {
+    .perks-main-img {
+        display: none;
+    }
+
+    .perks {
         height: auto;
         flex-direction: column;
         padding: 3vw 0;
     }
 
-    #pc-img {
-        display: none;
-    }
-
-    #pc-info {
+    .perks-info {
         width: fit-content;
     }
 
-    #pc-title {
+    .perks-title {
         margin-bottom: 1.5vw;
     }
 
-    #pc-text {
+    .perks-text {
         display: flex;
         align-items: center;
         padding: 0 5vw 2.5vw;
     }
 
-    #pc-text-img {
+    .perks-text-img {
         display: block;
         height: 45vw;
         aspect-ratio: 1/1;
-        margin-left: -2.5vw;
-        margin-right: 2vw;
     }
 
-    #pc-text p {
+    .perks-text p {
         font-size: 3vw;
+    }
+
+    .spacer {
+        height: 2vw;
     }
 
     #about-us-wrapper {
@@ -695,7 +706,6 @@ body {
     
     #about-us-text {
         font-size: 3vw;
-        font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 400;
         margin: 0 auto;
         padding: 0 2vw 0.5vw;
