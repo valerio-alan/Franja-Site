@@ -8,6 +8,10 @@ body {
     background: #19191d;
 }
 
+#content-wrapper {
+    background-image: linear-gradient(#19191d 20%, #313239, #696767, #a09b95, #d8d0c3);
+}
+
 #intro-wrapper {
     display: flex;
     width: 100%;
@@ -306,7 +310,7 @@ body {
     align-items: center;
     text-align: center;
     height: 30vw;
-    background: #313239;
+    background: #19191d4a;
 }
 
 .perks-main-img {
@@ -362,7 +366,6 @@ body {
 }
 
 #about-us-wrapper {
-    background: #d8d0c3;
     display: flex;
     justify-content: center;
     padding: 6.5px;
