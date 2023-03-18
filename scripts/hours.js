@@ -59,7 +59,7 @@ fetch('https://franjaapi-1-v0251088.deta.app/hours').then(h => h.text()).then(h 
     const data = JSON.parse(h)
     drawHours(data)
     console.log("👁 | Hours have been loaded")
-}).catch(error => {
+}).catch(() => {
     console.error("👁 | Hours are broken, using backup")
     fetch('franja.json').then(h => h.text()).then(h => {
         const data = JSON.parse(h)

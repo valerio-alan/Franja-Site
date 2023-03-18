@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     background: #19191d;
+    /* background-image: linear-gradient(#19191d 20%, #313239, #696767, #a09b95, #d8d0c3); */
 }
 
 #intro-wrapper {
@@ -60,7 +61,7 @@ body {
 }
 
 #banner {
-    background-color: #9297ac;
+    background: #9297ac;
     border-radius: 1vw;
     padding: 1.92vw 3vw 2.1vw;
     text-decoration: none;
@@ -106,7 +107,7 @@ body {
 }
 
 #header {
-    background-color: #313239;
+    background: #313239;
     padding: 10px 12.5px;
     display: flex;
     justify-content: space-between;
@@ -201,20 +202,24 @@ body {
     justify-content: space-around;
     width: 23vw;
     margin: 6.5px;
-    background-color: #313239;
+    background: #313239;
     border-radius: 1vw;
     text-align: center;
     color: #d8d0c3;
     padding: 1vw;
 }
 
-#section1-side h1 {
+.title {
     font-size: 5vw;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     font-style: italic;
-    margin: 0;
+    color: #e6e1da;
     padding-bottom: 0.5vw;
+}
+
+#section1-side h1 {
+    margin: 0;
     border-bottom: 0.25vw dashed #d8d0c3;
 }
 
@@ -250,7 +255,7 @@ body {
 .highlighted-row {
     font-weight: 800;
     color: #19191d;
-    background: #d8d0c3;
+    background: #e6e1da;
 }
 
 .highlighted-row .date, .highlighted-row .day{
@@ -296,15 +301,70 @@ body {
     text-align: left;
 }
 
+.perks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vw;
+}
+
+#drizly {
+    /* background: #696767; */
+}
+
+#reviews {
+    /* background: #a09b95; */
+}
+
+#pc {
+    background: #313239;
+}
+
+#pc-img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+#pc-info {
+    width: 42.2vw;
+}
+
+#pc-title {
+    width: 100%;
+    white-space: nowrap;
+}
+
+#pc-title h1{
+    width: 100%;
+    margin: 0;
+}
+
+#pc-text-img {
+    display: none;
+}
+
+#pc-text {
+    margin: 0 1vw;
+    color: #d8d0c3;
+}
+
+#pc-text p {
+    font-size: 1.7vw;
+    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    margin: 0.5vw;
+}
+
 #about-us-wrapper {
-    background-color: #d8d0c3;
+    background: #d8d0c3;
     display: flex;
     justify-content: center;
     padding: 6.5px;
 }
 
 #about-us {
-    background-color: #313239;
+    background: #313239;
     display: flex;
     padding: 6.5px;
     border-radius: 1vw;
@@ -328,12 +388,7 @@ body {
 }
 
 #about-us-title h1 {
-    font-size: 5vw;
-    font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-    font-style: italic;
     margin: 0 1.5vw;
-    padding-bottom: 0.5vw;
 }
 
 #about-us-text {
@@ -365,7 +420,7 @@ body {
 }
 
 #footer {
-    background-color: #313239;
+    background: #313239;
     padding: 1.5vw 25px;
     display: flex;
     align-items: center;
@@ -512,9 +567,12 @@ body {
         padding: 0;
         padding-top: 1.5vw;
     }
-    
-    #section1-side h1 {
+
+    .title {
         font-size: 10vw;
+    }
+
+    #section1-side h1 {
         margin: 0 0 -4vw;
         padding-bottom: 2vw;
         border-bottom: 0.5vw solid #d8d0c3;
@@ -563,7 +621,43 @@ body {
         letter-spacing: -0.065vw;
         font-size: 2.4vw;
         padding: 0 1vw;
-        margin: 0px;
+        margin: 0;
+    }
+
+    #pc {
+        height: auto;
+        flex-direction: column;
+        padding: 3vw 0;
+    }
+
+    #pc-img {
+        display: none;
+    }
+
+    #pc-info {
+        width: fit-content;
+    }
+
+    #pc-title {
+        margin-bottom: 1.5vw;
+    }
+
+    #pc-text {
+        display: flex;
+        align-items: center;
+        padding: 0 5vw 2.5vw;
+    }
+
+    #pc-text-img {
+        display: block;
+        height: 45vw;
+        aspect-ratio: 1/1;
+        margin-left: -2.5vw;
+        margin-right: 2vw;
+    }
+
+    #pc-text p {
+        font-size: 3vw;
     }
 
     #about-us-wrapper {
@@ -595,10 +689,6 @@ body {
     }
     
     #about-us-title h1 {
-        font-size: 10vw;
-        font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 700;
-        font-style: italic;
         margin: 0 2vw;
         padding-bottom: 0.5vw;
     }
