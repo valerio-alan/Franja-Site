@@ -55,7 +55,7 @@ body {
     align-items: center;
     position: fixed;
     background: #19191dcc;
-    z-index: 4;
+    z-index: 5;
     animation: 0.1s fade-in 0s cubic-bezier(0,.75,1,1);
     animation-fill-mode: forwards;
 }
@@ -103,7 +103,7 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 4;
 }
 
 #header {
@@ -371,11 +371,14 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    opacity: 0%;
+    z-index: 3;
 }
 
 .arrow {
     height: 4vw;
     margin: 0 0.75vw;
+    cursor: pointer;
 }
 
 .review {
@@ -385,22 +388,30 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-    /* animation: 0.5s review-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out; */
-    animation-fill-mode: forwards;
 }
 
 .hidden-review {
     opacity: 0%;
 }
   
-@keyframes review-in {
-    from {left: 100%} 
-    to {left: 0%}
+@keyframes review-in-right {
+    from {transform: translateX(100%)}
+    to {transform: translateX(0%)}
 }
   
-@keyframes review-out {
-    from {left: 0%}
-    to {left: -100%} 
+@keyframes review-out-left {
+    from {transform: translateX(0%)}
+    to {transform: translateX(-100%)}
+}
+  
+@keyframes review-in-left {
+    from {transform: translateX(-100%)}
+    to {transform: translateX(0%)}
+}
+  
+@keyframes review-out-right {
+    from {transform: translateX(0%)}
+    to {transform: translateX(100%)}
 }
 
 .review-back {
@@ -435,6 +446,8 @@ body {
 }
 
 .review-text {
+    display: flex;
+    align-items: center;
     height: 8.5vw;
     width: 20.5vw;
     position: absolute;
@@ -750,16 +763,41 @@ body {
     .perks-text-img {
         display: block;
         height: 45vw;
-        aspect-ratio: 1/1;
+        width: 45vw;
     }
 
-    .perks-text p {
+    .perks-text>p {
         font-size: 3vw;
+        width: 45vw;
+    }
+
+    .reviewer-info {
+        top: 5vw;
     }
     
-    .review {
-        height: 45vw;
-        width: 45vw;
+    .reviewer-img {
+        height: 7.5vw;
+    }
+    
+    .reviewer-name {
+        font-size: 3.3vw;
+        margin-left: 1.5vw;
+    }
+    
+    .review-text {
+        height: 13vw;
+        width: 30.5vw;
+        top: 20vw;
+    }
+    
+    .review-text>p {
+        font-size: 1.8vw;
+        line-height: 2.1vw;
+    }
+    
+    .arrow {
+        height: 6vw;
+        margin: 0 1vw;
     }
 
     .spacer {
