@@ -8,7 +8,7 @@ function nextReview() {
         reviews[i].style.animation = "0.5s review-out 0s ease-in-out forwards, 0.5s fade-out 0s ease-in-out forwards";
     }
     reviewIndex++
-    if (reviewIndex > reviews.length) {
+    if (reviewIndex > 4) {
         reviewIndex = 1
     }
     // reviews[reviewIndex-1].style.animation = "0.5s review-in 0s ease-in-out forwards, 0.5s fade-in 0s ease-in-out forwards";
