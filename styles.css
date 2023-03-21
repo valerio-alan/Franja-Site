@@ -756,6 +756,11 @@ body {
     .perks-text p {
         font-size: 3vw;
     }
+    
+    .review {
+        height: 45vw;
+        width: 45vw;
+    }
 
     .spacer {
         height: 2vw;

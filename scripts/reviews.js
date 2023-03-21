@@ -11,8 +11,11 @@ function nextReview() {
     if (reviewIndex > reviews.length) {
         reviewIndex = 1
     }
-    // reviews[reviewIndex-1].style.display = "flex"
-    reviews[reviewIndex-1].style.animation = "0.5s review-in 0s ease-in-out forwards, 0.5s fade-in 0s ease-in-out forwards";
+    // reviews[reviewIndex-1].style.animation = "0.5s review-in 0s ease-in-out forwards, 0.5s fade-in 0s ease-in-out forwards";
+    let nextReviews = document.getElementsByClassName(`review${reviewIndex-1}`)
+    for (let i = 0; i < nextReviews.length; i++) {
+        nextReviews[i].style.animation = "0.5s review-in 0s ease-in-out forwards, 0.5s fade-in 0s ease-in-out forwards";
+    }
 }
 
 function timer() {
