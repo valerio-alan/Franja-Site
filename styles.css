@@ -310,7 +310,7 @@ body {
     background: #313239;
 }
 
-.perks-main-img .perks-main-img>img {
+.perks-main-img, .perks-main-img>img {
     height: 100%;
     aspect-ratio: 1/1;
 }
