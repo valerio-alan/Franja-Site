@@ -1,7 +1,7 @@
 let reviewIndex = 1
 let count = 0
 
-let arrows = document.getElementsByClassName("arrows")
+let arrows = document.getElementsByClassName("arrow")
 for (let i = 0; i < arrows.length; i++) {
     arrows[i].style.opacity = "100%";
 }

@@ -311,28 +311,26 @@ body {
 .perks {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     height: 36vw;
     width: calc(85vw/3);
     background: #313239;
     border-radius: 1vw;
+    padding-top: 3vw;
 }
 
 .perks-main-img {
     height: 18vw;
     aspect-ratio: 1/1;
+    margin-bottom: 1.5vw;
+    user-select: none;
 }
 
 .perks-main-img>img {
     height: 100%;
     aspect-ratio: 1/1;
-}
-
-.perks-main-img>img {
-    height: 100%;
-    aspect-ratio: 1/1;
+    user-select: none;
 }
 
 .perks-title {
@@ -348,6 +346,7 @@ body {
 
 .perks-text-img {
     display: none;
+    user-select: none;
 }
 
 .perks-text {
@@ -380,7 +379,25 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    opacity: 0%;
+}
+
+#reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-div {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 1.5vw);
+    margin-bottom: 1.5vw;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.arrow-div:hover{
+    opacity: 1;
 }
 
 .arrows>div {
@@ -389,8 +406,10 @@ body {
 
 .arrow {
     height: 2.75vw;
-    margin: 0.3vw;
+    margin: 0.5vw;
     cursor: pointer;
+    opacity: 0%;
+    user-select: none;
 }
 
 .review {
@@ -400,6 +419,11 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.review:hover, #d-img:hover, #d-text-img:hover {
+    border-radius: 1vw;
+    background-color: #e6e1da0f;
 }
 
 .hidden-review {
@@ -439,43 +463,43 @@ body {
     position: absolute;
     align-items: center;
     justify-content: center;
-    top: 2vw;
+    top: 1.25vw;
     width: inherit;
 }
 
 .reviewer-img {
     position: relative;
     user-select: none;
-    height: 3vw;
+    height: 3.2vw;
     aspect-ratio: 1/1;
 }
 
 .reviewer-name {
     color: #e6e1da;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    margin-left: 0.5vw;
+    margin-left: 0.75vw;
 }
 
 .review-text {
     display: flex;
     align-items: center;
-    height: 5vw;
-    width: 12.2vw;
+    height: 6.5vw;
+    width: 15vw;
     position: absolute;
     text-align: center;
-    top: 8.1vw;
+    top: 7.9vw;
     margin: 0;
 }
 
 .review-text>p {
     color: #e6e1da;
-    font-size: 0.72vw;
+    font-size: 1.1vw;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     margin: 0;
-    line-height: 0.75vw;
+    line-height: 1.1vw;
 }
 
 .spacer {
@@ -530,10 +554,23 @@ body {
 }
 
 #contact-us-text > p:first-child {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     margin: 0.5vw;
 }
 
+p > a, span {
+    text-decoration: none;
+    color: #d8d0c3;
+    transition: 0.25s;
+}
+
+a:hover > span {
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #d8d0c3;
+    color: #313239;
+    padding: 0 0.5vw;
+}
 #about-us {
     font-size: 1.2vw;
     margin: 0.5vw;
@@ -588,10 +625,6 @@ body {
         background: #b5b0a8;
         transform: translate(-5px, 0px);
         box-shadow: 2.5px 0px 5px #19191d;
-    }
-
-    .header-text {
-        line-height: 25px;
     }
 }
 
@@ -804,33 +837,53 @@ body {
         width: 45vw;
     }
 
+    #reviews-wrapper {
+        display: none;
+    }
+
     .reviewer-info {
-        top: 5vw;
+        top: 2.75vw;
     }
     
     .reviewer-img {
-        height: 7.5vw;
+        height: 8vw;
     }
     
     .reviewer-name {
-        font-size: 3.3vw;
+        font-size: 3.6vw;
         margin-left: 1.5vw;
     }
     
     .review-text {
-        height: 13vw;
-        width: 30.5vw;
+        height: 16vw;
+        width: 35vw;
         top: 20vw;
     }
     
     .review-text>p {
-        font-size: 1.8vw;
-        line-height: 2.1vw;
+        font-size: 2.6vw;
+        line-height: 2.6vw;
+    }
+
+    .arrows {
+        align-items: end;
     }
     
     .arrow {
-        height: 6vw;
-        margin: 1.5vw;
+        height: 6.5vw;
+    }
+
+    .arrow.left {
+        margin: 3vw 3vw 1.5vw 1.5vw;
+    }
+    
+    .arrow.right {
+        margin: 3vw 1.5vw 1.5vw 3vw;
+    }
+
+    .review:hover, #d-img:hover, #d-text-img:hover {
+        border-radius: 3vw;
+        background-color: #e6e1da0f;
     }
 
     .spacer {
