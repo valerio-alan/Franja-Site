@@ -281,7 +281,7 @@ body {
     letter-spacing: -0.0075vw;
     font-size: 1vw;
     padding: 0 0.5vw;
-    margin: 0px;
+    margin: 0;
 }
 
 .date {
@@ -394,6 +394,7 @@ body {
     margin-bottom: 1.5vw;
     cursor: pointer;
     opacity: 0.5;
+    transition: opacity 0.25s;
 }
 
 .arrow-div:hover{
@@ -419,6 +420,10 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.review, #d-img, #d-text-img {
+    transition: border-radius 0.25s, background-color 0.25s;
 }
 
 .review:hover, #d-img:hover, #d-text-img:hover {
@@ -559,9 +564,9 @@ body {
 }
 
 p > a, span {
-    text-decoration: none;
+    text-decoration: inherit;
     color: #d8d0c3;
-    transition: 0.25s;
+    transition: font-weight 0.25s, background-color 0.25s, color 0.25s, padding 0.25s;
 }
 
 a:hover > span {
@@ -591,10 +596,10 @@ a:hover > span {
 
 #footer {
     background: #313239;
-    padding: 1.5vw 25px;
+    padding: 1.5vw 1.25vw;
     display: flex;
     align-items: center;
-    width: calc(100% - 50px);
+    width: calc(100% - 1.25vw);
 }
 
 #footer p {
@@ -602,7 +607,7 @@ a:hover > span {
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     margin: 0;
-    font-size: 20px;
+    font-size: 1.25vw;
 }
 
 @media screen and (min-width: 821px) {
@@ -653,7 +658,10 @@ a:hover > span {
         justify-content: center;
         padding: 2vw;
         width: calc(100% - 4vw);
-        font-size: 14px;
+    }
+
+    #footer p {
+        font-size: 2.5vw;
     }
 }
 
@@ -684,10 +692,6 @@ a:hover > span {
     .header-btn {
         padding: 7.5px 15px;
     }
-
-    #footer p {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 350px) {
@@ -701,10 +705,6 @@ a:hover > span {
 
     #header {
         justify-content: center;
-    }
-
-    #footer p {
-        font-size: 9px;
     }
 }
 
@@ -839,6 +839,11 @@ a:hover > span {
 
     #reviews-wrapper {
         display: none;
+    }
+
+    .review {
+        height: 45vw;
+        width: 45vw;
     }
 
     .reviewer-info {
