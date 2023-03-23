@@ -210,7 +210,7 @@ body {
 }
 
 .title {
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -220,7 +220,8 @@ body {
 
 #section1-side h1 {
     margin: 0;
-    border-bottom: 0.25vw dashed #d8d0c3;
+    border-bottom: 0.25vw solid #d8d0c3;
+    border-top: 0.25vw solid #d8d0c3;
 }
 
 #section1-side h2 {
@@ -313,11 +314,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 36vw;
+    height: 35vw;
     width: calc(85vw/3);
     background: #313239;
     border-radius: 1vw;
-    padding-top: 3vw;
+    padding-top: 2.5vw;
 }
 
 .perks-main-img {
@@ -530,16 +531,20 @@ body {
 }
 
 #contact-us-info {
+    box-sizing: border-box;
+    padding: 0.65vw;
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 24.6vw;
+    height: 22.6vw;
     margin: 0.65vw;
+    margin-right: 0;
 }
 
 #contact-us-title {
     display: flex;
-    border-bottom: 0.25vw dashed #d8d0c3;
+    border-bottom: 0.25vw solid #d8d0c3;
+    border-top: 0.25vw solid #d8d0c3;
     white-space: nowrap;
 }
 
@@ -550,17 +555,18 @@ body {
 #contact-us-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
+    gap: 2.5vw;
     width: 42.2vw;
     height: 100%;
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    margin: 0 1vw;
+    margin: 0;
 }
 
 #contact-us-text > p:first-child {
-    font-size: 1.5vw;
-    margin: 0.5vw;
+    font-size: 1.3vw;
+    margin: 0;
 }
 
 p > a, span {
@@ -576,14 +582,18 @@ a:hover > span {
     color: #313239;
     padding: 0 0.5vw;
 }
+
 #about-us {
     font-size: 1.2vw;
-    margin: 0.5vw;
+    margin: 0;
 }
 
 #contact-us-map {
-    width: 39vw;
-    height: 24.6vw;
+    box-sizing: border-box;
+    padding: 0.65vw;
+    padding-left: 0;
+    width: 40.65vw;
+    height: 22.6vw;
     margin: 0.65vw;
 }
 
@@ -595,11 +605,12 @@ a:hover > span {
 }
 
 #footer {
+    box-sizing: border-box;
     background: #313239;
-    padding: 1.5vw 1.25vw;
+    padding: 0.75vw 1.25vw;
     display: flex;
     align-items: center;
-    width: calc(100% - 1.25vw);
+    width: 100%;
 }
 
 #footer p {
@@ -607,7 +618,7 @@ a:hover > span {
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     margin: 0;
-    font-size: 1.25vw;
+    font-size: 0.8vw;
 }
 
 @media screen and (min-width: 821px) {
@@ -652,16 +663,6 @@ a:hover > span {
     
     #banner-text {
         font-size: 3.84vw;
-    }
-
-    #footer {
-        justify-content: center;
-        padding: 2vw;
-        width: calc(100% - 4vw);
-    }
-
-    #footer p {
-        font-size: 2.5vw;
     }
 }
 
@@ -742,6 +743,7 @@ a:hover > span {
         margin: 0 0 -4vw;
         padding-bottom: 2vw;
         border-bottom: 0.5vw solid #d8d0c3;
+        border-top: none;
     }
     
     #section1-side h2 {
@@ -913,6 +915,7 @@ a:hover > span {
         display: flex;
         flex-direction: column;
         height: 60vw;
+        padding: 0;
     }
     
     #contact-us-title {
@@ -930,11 +933,13 @@ a:hover > span {
     }
     
     #contact-us-text {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: auto;
         text-align: left;
+        padding: 0 1vw 1vw;
     }
 
     #contact-us-text > p:first-child {
@@ -952,6 +957,16 @@ a:hover > span {
         background-position: 0% 15%;
         width: 100%;
         height: 60vw;
-        margin: 0 auto 2vw;
+        margin: 0 auto 1.5vw;
+        padding: 0;
+    }
+
+    #footer {
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    #footer p {
+        font-size: 2.5vw;
     }
 }
