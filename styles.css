@@ -330,6 +330,11 @@ body {
     aspect-ratio: 1/1;
 }
 
+.perks-main-img>img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
 .perks-title {
     width: 100%;
     white-space: nowrap;
