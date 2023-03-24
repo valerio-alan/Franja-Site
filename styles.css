@@ -7,6 +7,54 @@ body {
     font-family: "myriad-pro", Verdana, Geneva, Tahoma, sans-serif;
     background: #19191d;
 }
+  
+@keyframes fade-in {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+  
+@keyframes fade-out {
+    from {opacity: 1} 
+    to {opacity: 0}
+}
+  
+@keyframes intro-in {
+    from {
+        width: 20vmin;
+    } 
+    to {
+        width: 80vmin;
+    }
+}
+  
+@keyframes intro-hide {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 100%;
+    }
+}
+  
+@keyframes review-in-right {
+    from {transform: translateX(100%)}
+    to {transform: translateX(0%)}
+}
+  
+@keyframes review-out-left {
+    from {transform: translateX(0%); display: flex}
+    to {transform: translateX(-100%); display: none}
+}
+  
+@keyframes review-in-left {
+    from {transform: translateX(-100%)}
+    to {transform: translateX(0%)}
+}
+  
+@keyframes review-out-right {
+    from {transform: translateX(0%); display: flex}
+    to {transform: translateX(100%); display: none}
+}
 
 #intro-wrapper {
     display: flex;
@@ -27,24 +75,6 @@ body {
     animation: 1.5s fade-in 0s linear, 1.5s intro-in 0s cubic-bezier(0,.75,1,1);
     animation-fill-mode: forwards;
     user-select: none;
-}
-  
-@keyframes intro-in {
-    from {
-        width: 20vmin;
-    } 
-    to {
-        width: 80vmin;
-    }
-}
-  
-@keyframes intro-hide {
-    from {
-        bottom: 0;
-    }
-    to {
-        bottom: 100%;
-    }
 }
 
 #banner-wrapper {
@@ -184,16 +214,6 @@ body {
     height: auto;
     display: none;
     animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
-}
-  
-@keyframes fade-in {
-    from {opacity: 0} 
-    to {opacity: 1}
-}
-  
-@keyframes fade-out {
-    from {opacity: 1} 
-    to {opacity: 0}
 }
 
 #section1-side {
@@ -435,26 +455,6 @@ body {
 .hidden-review {
     opacity: 0%;
     display: none;
-}
-  
-@keyframes review-in-right {
-    from {transform: translateX(100%)}
-    to {transform: translateX(0%)}
-}
-  
-@keyframes review-out-left {
-    from {transform: translateX(0%); display: flex}
-    to {transform: translateX(-100%); display: none}
-}
-  
-@keyframes review-in-left {
-    from {transform: translateX(-100%)}
-    to {transform: translateX(0%)}
-}
-  
-@keyframes review-out-right {
-    from {transform: translateX(0%); display: flex}
-    to {transform: translateX(100%); display: none}
 }
 
 .review-back {
@@ -722,12 +722,6 @@ a:hover > span {
         margin: 1vw;
     }
     
-    .slide {
-        width: 100%;
-        display: none;
-        animation: 0.5s fade-in 0s ease-in-out, 0.5s fade-out 4.5s ease-in-out;
-    }
-    
     #section1-side {
         width: calc(100% - 2vw);
         margin: 1vw;
@@ -767,19 +761,10 @@ a:hover > span {
     }
     
     .week {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: 400;
-        list-style-type: none;
-        text-align: center;
-        padding: 0;
         font-size: 3vw;
     }
     
     .day-row {
-        display: flex;
         margin: 0 0.6vw;
     }
     
@@ -788,7 +773,6 @@ a:hover > span {
         letter-spacing: -0.065vw;
         font-size: 2.4vw;
         padding: 0 1vw;
-        margin: 0;
     }
 
     #perks-wrapper {
@@ -803,7 +787,6 @@ a:hover > span {
 
     .perks {
         height: auto;
-        flex-direction: column;
         padding: 3vw 0;
         width: 100%;
         border-radius: 0;
@@ -890,7 +873,6 @@ a:hover > span {
 
     .review:hover, #d-img:hover, #d-text-img:hover {
         border-radius: 3vw;
-        background-color: #e6e1da0f;
     }
 
     .spacer {
@@ -898,8 +880,6 @@ a:hover > span {
     }
 
     #contact-us-wrapper {
-        display: flex;
-        justify-content: center;
         padding: 1vw;
     }
     
@@ -912,19 +892,15 @@ a:hover > span {
     }
     
     #contact-us-info {
-        display: flex;
-        flex-direction: column;
         height: 60vw;
         padding: 0;
     }
     
     #contact-us-title {
-        display: flex;
         width: auto;
         justify-content: center;
         border-bottom: 0.5vw solid #d8d0c3;
         border-top: 0.5vw solid #d8d0c3;
-        white-space: nowrap;
     }
     
     #contact-us-title h1 {
@@ -934,11 +910,8 @@ a:hover > span {
     
     #contact-us-text {
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
         width: auto;
-        text-align: left;
         padding: 0 1vw 1vw;
     }
 
