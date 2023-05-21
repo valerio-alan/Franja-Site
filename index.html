@@ -1,364 +1,463 @@
 <!DOCTYPE html>
+<!-- Coded by Alan Valerio @ alanvalerio.com -->
 
 <html lang="en">
-  <head>
-    <!-- Coded by Alan Valerio -->
-    <title>Franja Liquors</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <meta charset="utf-8">
-    <meta name="description" content="Website for Franja Liquors, a small family-owned liquor store. 785 Wyckoff Ave. Ridgewood, NY 11385 | (718) 381-3881 | contact@franjaliquors.com">
-    <meta property="og:url" content="https://franjaliquors.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Franja Liquors">
-    <meta property="og:description" content="Website for Franja Liquors, a small family-owned liquor store. 785 Wyckoff Ave. Ridgewood, NY 11385 | (718) 381-3881 | contact@franjaliquors.com">
-    <meta property="og:image" content="https://franjaliquors.com/images/storefront.webp">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="https://use.typekit.net/dcd6goo.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="intro-wrapper">
-      <img id="intro-logo" src="images/franja-logo.svg" alt="Franja Wines and Liquors Logo" draggable="false">
-    </div>
+	<head>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML6VH8R4Y0"></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
 
-    <div id="banner-wrapper" onclick="hideBanner()">
-      <div id="banner">
-        <img id="banner-exit" src="images/exit-button.svg" alt="Exit Button">
-        <a id="banner-link">
-          <p id="banner-text">
-            <!-- INSERT BANNER TEXT HERE -->
-          </p>
-        </a>
-      </div>
-    </div>
-    <div id="header-wrapper">
+			gtag('config', 'G-ML6VH8R4Y0')
+		</script>
+		<meta charset="utf-8" />
 
-      <div id="header">
+		<!-- HTML Meta Tags -->
+		<title>Franja Liquors</title>
+		<meta
+			name="description"
+			content="Website for Franja Liquors, a small family-owned liquor store. 785 Wyckoff Ave. Ridgewood, NY 11385 | (718) 381-3881 | contact@franjaliquors.com"
+		/>
 
-        <a class="header-item" href="/">
-          <img id="main-logo" src="images/franja-logo.svg" alt="Franja Wines and Liquors Logo">
-        </a>
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://franjaliquors.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Franja Liquors" />
+		<meta
+			property="og:description"
+			content="Website for Franja Liquors, a small family-owned liquor store. 785 Wyckoff Ave. Ridgewood, NY 11385 | (718) 381-3881 | contact@franjaliquors.com"
+		/>
+		<meta property="og:image" content="https://franjaliquors.com/images/storefront.webp" />
 
-        <div id="header-right">
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="franjaliquors.com" />
+		<meta property="twitter:url" content="https://franjaliquors.com" />
+		<meta name="twitter:title" content="Franja Liquors" />
+		<meta
+			name="twitter:description"
+			content="Website for Franja Liquors, a small family-owned liquor store. 785 Wyckoff Ave. Ridgewood, NY 11385 | (718) 381-3881 | contact@franjaliquors.com"
+		/>
+		<meta name="twitter:image" content="https://franjaliquors.com/images/storefront.webp" />
 
-          <a class="header-btn header-item" id="header-contact-btn" href="#contact-us">
-            Contact Us
-          </a>
+		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-          <div class="header-text header-item" id="header-contact-info">
-            <p><a href="https://www.google.com/maps/dir//Franja+Wines+%26+Liquors+785+Wyckoff+Ave+%233461+Ridgewood,+NY+11385/"><span>785 Wyckoff Ave</span><br>
-            <span>Ridgewood, NY 11385</span></a><br>
-            <a href="tel:+17183813881"><span>(718) 381-3881</span></a></p>
-          </div>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="https://use.typekit.net/dcd6goo.css" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div id="intro-wrapper">
+			<img id="intro-logo" src="images/franja-logo.svg" alt="Franja Wines and Liquors Logo" draggable="false" />
+		</div>
 
-        </div>
-      </div>
-      
-      
-      
-    </div>
-    
-    <div id="content-wrapper">
+		<div id="banner-wrapper" onclick="hideBanner()">
+			<div id="banner">
+				<img id="banner-exit" src="images/exit-button.svg" alt="Exit Button" />
+				<a id="banner-link">
+					<p id="banner-text">
+						<!-- INSERT BANNER TEXT HERE -->
+					</p>
+				</a>
+			</div>
+		</div>
+		<div id="header-wrapper">
+			<div id="header">
+				<a class="header-item" href="/">
+					<img id="main-logo" src="images/franja-logo.svg" alt="Franja Wines and Liquors Logo" />
+				</a>
 
-      <div id="section1">
+				<div id="header-right">
+					<a class="header-btn header-item" id="header-contact-btn" href="#contact-us"> Contact Us </a>
 
-        <div class="slides popped" id="sec1-slides">
-          <img class="slide" src="images/slide1.webp" alt="Photo from interior of Franja Wines and Liquors">
-          <img class="slide" src="images/slide2.webp" alt="Photo from interior of Franja Wines and Liquors">
-          <img class="slide" src="images/slide3.webp" alt="Photo from interior of Franja Wines and Liquors">
-        </div>
+					<div class="header-text header-item" id="header-contact-info">
+						<p>
+							<a href="https://www.google.com/maps/dir//Franja+Wines+%26+Liquors+785+Wyckoff+Ave+%233461+Ridgewood,+NY+11385/"
+								><span>785 Wyckoff Ave</span><br />
+								<span>Ridgewood, NY 11385</span></a
+							><br />
+							<a href="tel:+17183813881"><span>(718) 381-3881</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <div class="popped" id="section1-side">
-          <h1 class="title">Hours</h1>
-          <div id="section1-hours">
-            <div class="hour-set" id="store">
-              <h2>In-Store</h2>
-              <div class="week" id="store-week">
-                <div class="Day1 day-row" id="store-day1">
-                  <p class="Day1 day" id="store-day1-day">Sun</p>
-                  <p class="Day1 date" id="store-day1-date">Date1</p>
-                  <p class="Day1 hour" id="store-day1-hours">12 pm - 9 pm </p>
-                </div>
-                <div class="Day2 day-row" id="store-day2">
-                  <p class="Day2 day" id="store-day2-day">Mon</p>
-                  <p class="Day2 date" id="store-day2-date">Date2</p>
-                  <p class="Day2 hour" id="store-day2-hours">12 pm - 10 pm</p>
-                </div>
-                <div class="Day3 day-row" id="store-day3">
-                  <p class="Day3 day" id="store-day3-day">Tue</p>
-                  <p class="Day3 date" id="store-day3-date">Date3</p>
-                  <p class="Day3 hour" id="store-day3-hours">12 pm - 10 pm</p>
-                </div>
-                <div class="Day4 day-row" id="store-day4">
-                  <p class="Day4 day" id="store-day4-day">Wed</p>
-                  <p class="Day4 date" id="store-day4-date">Date4</p>
-                  <p class="Day4 hour" id="store-day4-hours">12 pm - 10 pm</p>
-                </div>
-                <div class="Day5 day-row" id="store-day5">
-                  <p class="Day5 day" id="store-day5-day">Thu</p>
-                  <p class="Day5 date" id="store-day5-date">Date5</p>
-                  <p class="Day5 hour" id="store-day5-hours">12 pm - 10 pm</p>
-                </div>
-                <div class="Day6 day-row" id="store-day6">
-                  <p class="Day6 day" id="store-day6-day">Fri</p>
-                  <p class="Day6 date" id="store-day6-date">Date6</p>
-                  <p class="Day6 hour" id="store-day6-hours">11 am - 10 pm</p>
-                </div>
-                <div class="Day7 day-row" id="store-day7">
-                  <p class="Day7 day" id="store-day7-day">Sat</p>
-                  <p class="Day7 date" id="store-day7-date">Date7</p>
-                  <p class="Day7 hour" id="store-day7-hours">11 am - 10 pm</p>
-                </div>
-              </div>
-            </div>
-            <div id="hour-set-divider"></div>
-            <div class="hour-set" id="delivery">
-              <h2>Delivery</h2>
-              <div class="week" id="delivery-week">
-                <div class="Day1 day-row" id="delivery-day1">
-                  <p class="Day1 day" id="delivery-day1-day">Sun</p>
-                  <p class="Day1 date" id="delivery-day1-date">Date1</p>
-                  <p class="Day1 hour" id="delivery-day1-hours">No Deliveries</p>
-                </div>
-                <div class="Day2 day-row" id="delivery-day2">
-                  <p class="Day2 day" id="delivery-day2-day">Mon</p>
-                  <p class="Day2 date" id="delivery-day2-date">Date2</p>
-                  <p class="Day2 hour" id="delivery-day2-hours">12 pm - 9 pm </p>
-                </div>
-                <div class="Day3 day-row" id="delivery-day3">
-                  <p class="Day3 day" id="delivery-day3-day">Tue</p>
-                  <p class="Day3 date" id="delivery-day3-date">Date3</p>
-                  <p class="Day3 hour" id="delivery-day3-hours">12 pm - 9 pm </p>
-                </div>
-                <div class="Day4 day-row" id="delivery-day4">
-                  <p class="Day4 day" id="delivery-day4-day">Wed</p>
-                  <p class="Day4 date" id="delivery-day4-date">Date4</p>
-                  <p class="Day4 hour" id="delivery-day4-hours">12 pm - 9 pm </p>
-                </div>
-                <div class="Day5 day-row" id="delivery-day5">
-                  <p class="Day5 day" id="delivery-day5-day">Thu</p>
-                  <p class="Day5 date" id="delivery-day5-date">Date5</p>
-                  <p class="Day5 hour" id="delivery-day5-hours">12 pm - 9 pm </p>
-                </div>
-                <div class="Day6 day-row" id="delivery-day6">
-                  <p class="Day6 day" id="delivery-day6-day">Fri</p>
-                  <p class="Day6 date" id="delivery-day6-date">Date6</p>
-                  <p class="Day6 hour" id="delivery-day6-hours">12 pm - 9 pm </p>
-                </div>
-                <div class="Day7 day-row" id="delivery-day7">
-                  <p class="Day7 day" id="delivery-day7-day">Sat</p>
-                  <p class="Day7 date" id="delivery-day7-date">Date7</p>
-                  <p class="Day7 hour" id="delivery-day7-hours">12 pm - 9 pm </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+		<div id="content-wrapper">
+			<div id="section1">
+				<div class="slides popped" id="sec1-slides">
+					<img class="slide" src="images/slide1.webp" alt="Photo from interior of Franja Wines and Liquors" />
+					<img class="slide" src="images/slide2.webp" alt="Photo from interior of Franja Wines and Liquors" />
+					<img class="slide" src="images/slide3.webp" alt="Photo from interior of Franja Wines and Liquors" />
+				</div>
 
-      </div>
+				<div class="popped" id="section1-side">
+					<h1 class="title">Hours</h1>
+					<div id="section1-hours">
+						<div class="hour-set" id="store">
+							<h2>In-Store</h2>
+							<div class="week" id="store-week">
+								<div class="Day1 day-row" id="store-day1">
+									<p class="Day1 day" id="store-day1-day">Sun</p>
+									<p class="Day1 date" id="store-day1-date">Date1</p>
+									<p class="Day1 hour" id="store-day1-hours">12 pm - 9 pm</p>
+								</div>
+								<div class="Day2 day-row" id="store-day2">
+									<p class="Day2 day" id="store-day2-day">Mon</p>
+									<p class="Day2 date" id="store-day2-date">Date2</p>
+									<p class="Day2 hour" id="store-day2-hours">12 pm - 10 pm</p>
+								</div>
+								<div class="Day3 day-row" id="store-day3">
+									<p class="Day3 day" id="store-day3-day">Tue</p>
+									<p class="Day3 date" id="store-day3-date">Date3</p>
+									<p class="Day3 hour" id="store-day3-hours">12 pm - 10 pm</p>
+								</div>
+								<div class="Day4 day-row" id="store-day4">
+									<p class="Day4 day" id="store-day4-day">Wed</p>
+									<p class="Day4 date" id="store-day4-date">Date4</p>
+									<p class="Day4 hour" id="store-day4-hours">12 pm - 10 pm</p>
+								</div>
+								<div class="Day5 day-row" id="store-day5">
+									<p class="Day5 day" id="store-day5-day">Thu</p>
+									<p class="Day5 date" id="store-day5-date">Date5</p>
+									<p class="Day5 hour" id="store-day5-hours">12 pm - 10 pm</p>
+								</div>
+								<div class="Day6 day-row" id="store-day6">
+									<p class="Day6 day" id="store-day6-day">Fri</p>
+									<p class="Day6 date" id="store-day6-date">Date6</p>
+									<p class="Day6 hour" id="store-day6-hours">11 am - 10 pm</p>
+								</div>
+								<div class="Day7 day-row" id="store-day7">
+									<p class="Day7 day" id="store-day7-day">Sat</p>
+									<p class="Day7 date" id="store-day7-date">Date7</p>
+									<p class="Day7 hour" id="store-day7-hours">11 am - 10 pm</p>
+								</div>
+							</div>
+						</div>
+						<div id="hour-set-divider"></div>
+						<div class="hour-set" id="delivery">
+							<h2>Delivery</h2>
+							<div class="week" id="delivery-week">
+								<div class="Day1 day-row" id="delivery-day1">
+									<p class="Day1 day" id="delivery-day1-day">Sun</p>
+									<p class="Day1 date" id="delivery-day1-date">Date1</p>
+									<p class="Day1 hour" id="delivery-day1-hours">No Deliveries</p>
+								</div>
+								<div class="Day2 day-row" id="delivery-day2">
+									<p class="Day2 day" id="delivery-day2-day">Mon</p>
+									<p class="Day2 date" id="delivery-day2-date">Date2</p>
+									<p class="Day2 hour" id="delivery-day2-hours">12 pm - 9 pm</p>
+								</div>
+								<div class="Day3 day-row" id="delivery-day3">
+									<p class="Day3 day" id="delivery-day3-day">Tue</p>
+									<p class="Day3 date" id="delivery-day3-date">Date3</p>
+									<p class="Day3 hour" id="delivery-day3-hours">12 pm - 9 pm</p>
+								</div>
+								<div class="Day4 day-row" id="delivery-day4">
+									<p class="Day4 day" id="delivery-day4-day">Wed</p>
+									<p class="Day4 date" id="delivery-day4-date">Date4</p>
+									<p class="Day4 hour" id="delivery-day4-hours">12 pm - 9 pm</p>
+								</div>
+								<div class="Day5 day-row" id="delivery-day5">
+									<p class="Day5 day" id="delivery-day5-day">Thu</p>
+									<p class="Day5 date" id="delivery-day5-date">Date5</p>
+									<p class="Day5 hour" id="delivery-day5-hours">12 pm - 9 pm</p>
+								</div>
+								<div class="Day6 day-row" id="delivery-day6">
+									<p class="Day6 day" id="delivery-day6-day">Fri</p>
+									<p class="Day6 date" id="delivery-day6-date">Date6</p>
+									<p class="Day6 hour" id="delivery-day6-hours">12 pm - 9 pm</p>
+								</div>
+								<div class="Day7 day-row" id="delivery-day7">
+									<p class="Day7 day" id="delivery-day7-day">Sat</p>
+									<p class="Day7 date" id="delivery-day7-date">Date7</p>
+									<p class="Day7 hour" id="delivery-day7-hours">12 pm - 9 pm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div id="perks-wrapper">
-        <div class="perks popped" id="pc">
-          <img class="perks-main-img" id="pc-img" src="images/punchcard.png" alt="Image of the back and front of the punch cards offered at Franja Wines and Liquors">
-          <div class="perks-info" id="pc-info">
-            <div class="perks-title" id="pc-title">
-              <h1 class="title">Punch Cards</h1>
-            </div>
-            <div class="perks-text" id="pc-text">
-              <img class="perks-text-img" id="pc-text-img" src="images/punchcard.png" alt="Image of the back and front of the punch cards offered at Franja Wines and Liquors">
-              <p>Expand your wine collection and try new flavors with our Box Club punch cards! For every bottle of wine you purchase, you'll earn a punch and get closer to a $9 discount on any wine bottle. That means you can enjoy a $10 wine for just $1!</p>
-            </div>
-          </div>
-        </div>
+			<div id="perks-wrapper">
+				<div class="perks popped" id="pc">
+					<img class="perks-main-img" id="pc-img" src="images/punchcard.png" alt="Image of the back and front of the punch cards offered at Franja Wines and Liquors" />
+					<div class="perks-info" id="pc-info">
+						<div class="perks-title" id="pc-title">
+							<h1 class="title">Punch Cards</h1>
+						</div>
+						<div class="perks-text" id="pc-text">
+							<img
+								class="perks-text-img"
+								id="pc-text-img"
+								src="images/punchcard.png"
+								alt="Image of the back and front of the punch cards offered at Franja Wines and Liquors"
+							/>
+							<p>
+								Expand your wine collection and try new flavors with our Box Club punch cards! For every bottle of wine you purchase, you'll earn a punch and get closer
+								to a $9 discount on any wine bottle. That means you can enjoy a $10 wine for just $1!
+							</p>
+						</div>
+					</div>
+				</div>
 
-        <div class="perks popped" id="reviews">
-          <div id="reviews-wrapper">
-            <div class="arrow-div" onclick="lastReview()">
-              <img class="arrow" src="images/left.svg" alt="Left Arrow" draggable="false">
-            </div>
-            <div class="perks-main-img review-section" id="r-img">
+				<div class="perks popped" id="reviews">
+					<div id="reviews-wrapper">
+						<div class="arrow-div" onclick="lastReview()">
+							<img class="arrow" src="images/left.svg" alt="Left Arrow" draggable="false" />
+						</div>
+						<div class="perks-main-img review-section" id="r-img">
+							<a class="review review1" href="https://goo.gl/maps/WqhHzucZ6MHznQKc6" target="_blank" rel="noopener">
+								<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+								<div class="reviewer-info">
+									<img
+										class="reviewer-img"
+										src="https://lh3.googleusercontent.com/a-/ACB-R5QdCMcvXZ5SJeY_XRqPJqsVCDY01HyjXoM7OZDlmFc=w256-h256-p-rp-mo-ba3-br100"
+										alt="Image of reviewer"
+										draggable="false"
+									/>
+									<h2 class="reviewer-name">Chai</h2>
+								</div>
+								<div class="review-text">
+									<p>
+										An amazing liquor shop! A great selection of both wine+liquor with a high range in both size and price range. Owners are knowledgeable, helpful, and
+										very nice!...
+									</p>
+								</div>
+							</a>
 
-              <a class="review review1" href="https://goo.gl/maps/WqhHzucZ6MHznQKc6" target="_blank" rel="noopener">
-                <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                <div class="reviewer-info">
-                  <img class="reviewer-img" src="https://lh3.googleusercontent.com/a-/ACB-R5QdCMcvXZ5SJeY_XRqPJqsVCDY01HyjXoM7OZDlmFc=w256-h256-p-rp-mo-ba3-br100" alt="Image of reviewer" draggable="false">
-                  <h2 class="reviewer-name">Chai</h2>
-                </div>
-                <div class="review-text">
-                  <p>
-                    An amazing liquor shop! A great selection of both wine+liquor with a high range in both size and price range. Owners are knowledgeable, helpful, and very nice!...
-                  </p>
-                </div>
-              </a>
+							<a class="review review2 hidden-review" href="https://goo.gl/maps/LQFCzk3KP2K55sRZA" target="_blank" rel="noopener">
+								<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+								<div class="reviewer-info">
+									<img
+										class="reviewer-img"
+										src="https://lh3.googleusercontent.com/a/AGNmyxbrITsUjtrmyZsQzThqwhWUJSmoZ3eO_Fq3ch8C=w256-h256-p-rp-mo-ba5-br100"
+										alt="Image of reviewer"
+										draggable="false"
+									/>
+									<h2 class="reviewer-name">Bradley Ramirez</h2>
+								</div>
+								<div class="review-text">
+									<p>
+										...It's very clean and especially very friendly. The people there make you feel very welcomed and very close, it feels like they are your family
+										members...
+									</p>
+								</div>
+							</a>
 
-              <a class="review review2 hidden-review" href="https://goo.gl/maps/LQFCzk3KP2K55sRZA" target="_blank" rel="noopener">
-                <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                <div class="reviewer-info">
-                  <img class="reviewer-img" src="https://lh3.googleusercontent.com/a/AGNmyxbrITsUjtrmyZsQzThqwhWUJSmoZ3eO_Fq3ch8C=w256-h256-p-rp-mo-ba5-br100" alt="Image of reviewer" draggable="false">
-                  <h2 class="reviewer-name">Bradley Ramirez</h2>
-                </div>
-                <div class="review-text">
-                  <p>
-                    ...It's very clean and especially very friendly. The people there make you feel very welcomed and very close, it feels like they are your family members...
-                  </p>
-                </div>
-              </a>
+							<a class="review review3 hidden-review" href="https://goo.gl/maps/x4QuxWDjhC2qjZmo8" target="_blank" rel="noopener">
+								<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+								<div class="reviewer-info">
+									<img
+										class="reviewer-img"
+										src="https://lh3.googleusercontent.com/a-/ACB-R5TewjFA3on5GCuPyffxZBh7enuVS0XwJTYLiz58YA=w256-h256-p-rp-mo-ba3-br100"
+										alt="Image of reviewer"
+										draggable="false"
+									/>
+									<h2 class="reviewer-name">Taylor Thompson</h2>
+								</div>
+								<div class="review-text">
+									<p>
+										They have punch card rewards and I’ve already gone through quite a few. Great people, great selection... The owners are lovely and will always
+										help!...
+									</p>
+								</div>
+							</a>
 
-              <a class="review review3 hidden-review" href="https://goo.gl/maps/x4QuxWDjhC2qjZmo8" target="_blank" rel="noopener">
-                <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                <div class="reviewer-info">
-                  <img class="reviewer-img" src="https://lh3.googleusercontent.com/a-/ACB-R5TewjFA3on5GCuPyffxZBh7enuVS0XwJTYLiz58YA=w256-h256-p-rp-mo-ba3-br100" alt="Image of reviewer" draggable="false">
-                  <h2 class="reviewer-name">Taylor Thompson</h2>
-                </div>
-                <div class="review-text">
-                  <p>
-                    They have punch card rewards and I’ve already gone through quite a few. Great people, great selection... The owners are lovely and will always help!...
-                  </p>
-                </div>
-              </a>
+							<a class="review review4 hidden-review" href="https://goo.gl/maps/AVqyFZyvFXm8jK1U6" target="_blank" rel="noopener">
+								<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+								<div class="reviewer-info">
+									<img
+										class="reviewer-img"
+										src="https://lh3.googleusercontent.com/a-/ACB-R5RxwIAybTxXS0MQUnlyQ2keT8LTu4OXt-pZhEDptA=w256-h256-p-rp-mo-br100"
+										alt="Image of reviewer"
+										draggable="false"
+									/>
+									<h2 class="reviewer-name">Krista Lulla</h2>
+								</div>
+								<div class="review-text">
+									<p>
+										...So great to not have to peer behind a bullet proof partition to choose wine. They have a fantastic selection and the men who work here are super
+										friendly...
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="arrow-div" onclick="nextReview()">
+							<img class="arrow" src="images/right.svg" alt="Right Arrow" draggable="false" />
+						</div>
+					</div>
+					<div class="perks-info" id="r-info">
+						<div class="perks-title" id="r-title">
+							<h1 class="title">Reviews</h1>
+						</div>
+						<div class="perks-text" id="r-text">
+							<div class="perks-text-img review-section" id="r-text-img">
+								<div class="arrows">
+									<div onclick="lastReview()">
+										<img class="arrow left" src="images/left.svg" alt="Left Arrow" draggable="false" />
+									</div>
+									<div onclick="nextReview()">
+										<img class="arrow right" src="images/right.svg" alt="Right Arrow" draggable="false" />
+									</div>
+								</div>
 
-              <a class="review review4 hidden-review" href="https://goo.gl/maps/AVqyFZyvFXm8jK1U6" target="_blank" rel="noopener">
-                <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                <div class="reviewer-info">
-                  <img class="reviewer-img" src="https://lh3.googleusercontent.com/a-/ACB-R5RxwIAybTxXS0MQUnlyQ2keT8LTu4OXt-pZhEDptA=w256-h256-p-rp-mo-br100" alt="Image of reviewer" draggable="false">
-                  <h2 class="reviewer-name">Krista Lulla</h2>
-                </div>
-                <div class="review-text">
-                  <p>
-                    ...So great to not have to peer behind a bullet proof partition to choose wine. They have a fantastic selection and the men who work here are super friendly...
-                  </p>
-                </div>
-              </a>
+								<a class="review review1" href="https://goo.gl/maps/WqhHzucZ6MHznQKc6" target="_blank" rel="noopener">
+									<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+									<div class="reviewer-info">
+										<img
+											class="reviewer-img"
+											src="https://lh3.googleusercontent.com/a-/ACB-R5QdCMcvXZ5SJeY_XRqPJqsVCDY01HyjXoM7OZDlmFc=w256-h256-p-rp-mo-ba3-br100"
+											alt="Image of reviewer"
+											alt="Image of reviewer"
+											draggable="false"
+										/>
+										<h2 class="reviewer-name">Chai</h2>
+									</div>
+									<div class="review-text">
+										<p>
+											An amazing liquor shop! A great selection of both wine+liquor with a high range in both size and price range. Owners are knowledgeable, helpful, and
+											very nice!...
+										</p>
+									</div>
+								</a>
 
-            </div>
-            <div class="arrow-div" onclick="nextReview()">
-              <img class="arrow" src="images/right.svg" alt="Right Arrow" draggable="false">
-            </div>
-          </div>
-          <div class="perks-info" id="r-info">
-            <div class="perks-title" id="r-title">
-              <h1 class="title">Reviews</h1>
-            </div>
-            <div class="perks-text" id="r-text">
-              <div class="perks-text-img review-section" id="r-text-img">
-                <div class="arrows">
-                  <div onclick="lastReview()">
-                    <img class="arrow left" src="images/left.svg" alt="Left Arrow" draggable="false">
-                  </div>
-                  <div onclick="nextReview()">
-                    <img class="arrow right" src="images/right.svg" alt="Right Arrow" draggable="false">
-                  </div>
-                </div>
-      
-                <a class="review review1" href="https://goo.gl/maps/WqhHzucZ6MHznQKc6" target="_blank" rel="noopener">
-                  <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                  <div class="reviewer-info">
-                    <img class="reviewer-img" src="https://lh3.googleusercontent.com/a-/ACB-R5QdCMcvXZ5SJeY_XRqPJqsVCDY01HyjXoM7OZDlmFc=w256-h256-p-rp-mo-ba3-br100" alt="Image of reviewer" alt="Image of reviewer" draggable="false">
-                    <h2 class="reviewer-name">Chai</h2>
-                  </div>
-                  <div class="review-text">
-                    <p>
-                      An amazing liquor shop! A great selection of both wine+liquor with a high range in both size and price range. Owners are knowledgeable, helpful, and very nice!...
-                    </p>
-                  </div>
-                </a>
-      
-                <a class="review review2 hidden-review" href="https://goo.gl/maps/LQFCzk3KP2K55sRZA" target="_blank" rel="noopener">
-                  <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                  <div class="reviewer-info">
-                    <img class="reviewer-img" src="https://lh3.googleusercontent.com/a/AGNmyxbrITsUjtrmyZsQzThqwhWUJSmoZ3eO_Fq3ch8C=w256-h256-p-rp-mo-ba5-br100" alt="Image of reviewer" draggable="false">
-                    <h2 class="reviewer-name">Bradley Ramirez</h2>
-                  </div>
-                  <div class="review-text">
-                    <p>
-                      ...It's very clean and especially very friendly. The people there make you feel very welcomed and very close, it feels like they are your family members...
-                    </p>
-                  </div>
-                </a>
-      
-                <a class="review review3 hidden-review" href="https://goo.gl/maps/x4QuxWDjhC2qjZmo8" target="_blank" rel="noopener">
-                  <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                  <div class="reviewer-info">
-                    <img class="reviewer-img" src="https://lh3.googleusercontent.com/a-/ACB-R5TewjFA3on5GCuPyffxZBh7enuVS0XwJTYLiz58YA=w256-h256-p-rp-mo-ba3-br100" alt="Image of reviewer" draggable="false">
-                    <h2 class="reviewer-name">Taylor Thompson</h2>
-                  </div>
-                  <div class="review-text">
-                    <p>
-                      They have punch card rewards and I’ve already gone through quite a few. Great people, great selection... The owners are lovely and will always help!...
-                    </p>
-                  </div>
-                </a>
-      
-                <a class="review review4 hidden-review" href="https://goo.gl/maps/AVqyFZyvFXm8jK1U6" target="_blank" rel="noopener">
-                  <img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false">
-                  <div class="reviewer-info">
-                    <img class="reviewer-img" src="https://lh3.googleusercontent.com/a-/ACB-R5RxwIAybTxXS0MQUnlyQ2keT8LTu4OXt-pZhEDptA=w256-h256-p-rp-mo-br100" alt="Image of reviewer" draggable="false">
-                    <h2 class="reviewer-name">Krista Lulla</h2>
-                  </div>
-                  <div class="review-text">
-                    <p>
-                      ...So great to not have to peer behind a bullet proof partition to choose wine. They have a fantastic selection and the men who work here are super friendly...
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <p>
-                With 101 Google reviews and a rating of 4.7 stars, you can trust that our customers love what we do. Our reviews speak for themselves - come visit us and experience it for yourself!
-              </p>
-            </div>
-          </div>
-        </div>
+								<a class="review review2 hidden-review" href="https://goo.gl/maps/LQFCzk3KP2K55sRZA" target="_blank" rel="noopener">
+									<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+									<div class="reviewer-info">
+										<img
+											class="reviewer-img"
+											src="https://lh3.googleusercontent.com/a/AGNmyxbrITsUjtrmyZsQzThqwhWUJSmoZ3eO_Fq3ch8C=w256-h256-p-rp-mo-ba5-br100"
+											alt="Image of reviewer"
+											draggable="false"
+										/>
+										<h2 class="reviewer-name">Bradley Ramirez</h2>
+									</div>
+									<div class="review-text">
+										<p>
+											...It's very clean and especially very friendly. The people there make you feel very welcomed and very close, it feels like they are your family
+											members...
+										</p>
+									</div>
+								</a>
 
-        <div class="perks popped" id="drizly">
-          <a class="perks-main-img" id="d-img" href="https://drizly.com/franja-liquors-inc/s8016" target="_blank" rel="noopener">
-            <img src="images/drizly.png" alt="Drizly delivery service logo">
-          </a>
-          <div class="perks-info" id="d-info">
-            <div class="perks-title" id="d-title">
-              <h1 class="title">Delivery</h1>
-            </div>
-            <div class="perks-text" id="d-text">
-              <a href="https://drizly.com/franja-liquors-inc/s8016" target="_blank" rel="noopener">
-                <img class="perks-text-img" id="d-text-img" src="images/drizly.png" alt="Drizly delivery service logo">
-              </a>
-              <p>Let us bring the drinks to you! Our liquor store offers the fastest home delivery through <a href="https://drizly.com/franja-liquors-inc/s8016" target="_blank" rel="noopener">Drizly</a>, so you can have all your favorite drinks delivered right to your doorstep. Place your order now and enjoy the convenience!</p>
-            </div>
-          </div>
-        </div>
-      </div>
+								<a class="review review3 hidden-review" href="https://goo.gl/maps/x4QuxWDjhC2qjZmo8" target="_blank" rel="noopener">
+									<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+									<div class="reviewer-info">
+										<img
+											class="reviewer-img"
+											src="https://lh3.googleusercontent.com/a-/ACB-R5TewjFA3on5GCuPyffxZBh7enuVS0XwJTYLiz58YA=w256-h256-p-rp-mo-ba3-br100"
+											alt="Image of reviewer"
+											draggable="false"
+										/>
+										<h2 class="reviewer-name">Taylor Thompson</h2>
+									</div>
+									<div class="review-text">
+										<p>
+											They have punch card rewards and I’ve already gone through quite a few. Great people, great selection... The owners are lovely and will always
+											help!...
+										</p>
+									</div>
+								</a>
 
-      <div class="spacer"></div>
+								<a class="review review4 hidden-review" href="https://goo.gl/maps/AVqyFZyvFXm8jK1U6" target="_blank" rel="noopener">
+									<img class="review-back" src="images/ReviewsBack.png" alt="Background of review" draggable="false" />
+									<div class="reviewer-info">
+										<img
+											class="reviewer-img"
+											src="https://lh3.googleusercontent.com/a-/ACB-R5RxwIAybTxXS0MQUnlyQ2keT8LTu4OXt-pZhEDptA=w256-h256-p-rp-mo-br100"
+											alt="Image of reviewer"
+											draggable="false"
+										/>
+										<h2 class="reviewer-name">Krista Lulla</h2>
+									</div>
+									<div class="review-text">
+										<p>
+											...So great to not have to peer behind a bullet proof partition to choose wine. They have a fantastic selection and the men who work here are super
+											friendly...
+										</p>
+									</div>
+								</a>
+							</div>
+							<p>
+								With 101 Google reviews and a rating of 4.7 stars, you can trust that our customers love what we do. Our reviews speak for themselves - come visit us and
+								experience it for yourself!
+							</p>
+						</div>
+					</div>
+				</div>
 
-      <div id="contact-us-wrapper">
-        <div class="popped" id="contact-us">
-          <div id="contact-us-info">
-            <div id="contact-us-title">
-              <h1 class="title">Contact Us</h1>
-            </div>
-            <div id="contact-us-text">
-              <p>
-                <a href="https://www.google.com/maps/dir//Franja+Wines+%26+Liquors+785+Wyckoff+Ave+%233461+Ridgewood,+NY+11385/" target="_blank" rel="noopener"><span>785 Wyckoff Ave. Ridgewood, NY 11385</span></a><br>
-                <a href="mailto:contact@franjaliquors.com"><span>contact@franjaliquors.com</span></a><br>
-                <a href="tel:+17183813881"><span>(718) 381-3881</span></a><br>
-              </p>
-              <p id="about-us">
-                Our family-owned liquor store is dedicated to providing you with the best shopping experience possible. We are always available to offer expert advice and help you find exactly what you're looking for. From online ordering and deliveries to our personal recommendations, we’ve got you covered.
-              </p>
-            </div>
-          </div>
-          <iframe id="contact-us-map" title="Map centered on Franja Liquors" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.884935037208!2d-73.91113318432662!3d40.698531746375785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c2485153c1b%3A0xe7d3c261be2bf259!2sFranja%20Wines%20%26%20Liquors!5e0!3m2!1sen!2sus!4v1679520378337!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+				<div class="perks popped" id="drizly">
+					<a class="perks-main-img" id="d-img" href="https://drizly.com/franja-liquors-inc/s8016" target="_blank" rel="noopener">
+						<img src="images/drizly.png" alt="Drizly delivery service logo" />
+					</a>
+					<div class="perks-info" id="d-info">
+						<div class="perks-title" id="d-title">
+							<h1 class="title">Delivery</h1>
+						</div>
+						<div class="perks-text" id="d-text">
+							<a href="https://drizly.com/franja-liquors-inc/s8016" target="_blank" rel="noopener">
+								<img class="perks-text-img" id="d-text-img" src="images/drizly.png" alt="Drizly delivery service logo" />
+							</a>
+							<p>
+								Let us bring the drinks to you! Our liquor store offers the fastest home delivery through
+								<a href="https://drizly.com/franja-liquors-inc/s8016" target="_blank" rel="noopener">Drizly</a>, so you can have all your favorite drinks delivered right
+								to your doorstep. Place your order now and enjoy the convenience!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    </div>
-    <div id="footer">
-      <p>COPYRIGHT © 2023 FRANJA LIQUORS - ALL RIGHTS RESERVED.</p>
-    </div>
-    <script src="main.js"></script>
-    <script src="scripts/banner.js"></script>
-    <script src="scripts/hours.js"></script>
-    <script src="scripts/slideshow.js"></script>
-    <script src="scripts/reviews.js"></script>
-  </body>
+			<div class="spacer"></div>
+
+			<div id="contact-us-wrapper">
+				<div class="popped" id="contact-us">
+					<div id="contact-us-info">
+						<div id="contact-us-title">
+							<h1 class="title">Contact Us</h1>
+						</div>
+						<div id="contact-us-text">
+							<p>
+								<a href="https://www.google.com/maps/dir//Franja+Wines+%26+Liquors+785+Wyckoff+Ave+%233461+Ridgewood,+NY+11385/" target="_blank" rel="noopener"
+									><span>785 Wyckoff Ave. Ridgewood, NY 11385</span></a
+								><br />
+								<a href="mailto:contact@franjaliquors.com"><span>contact@franjaliquors.com</span></a
+								><br />
+								<a href="tel:+17183813881"><span>(718) 381-3881</span></a
+								><br />
+							</p>
+							<p id="about-us">
+								Our family-owned liquor store is dedicated to providing you with the best shopping experience possible. We are always available to offer expert advice and
+								help you find exactly what you're looking for. From online ordering and deliveries to our personal recommendations, we’ve got you covered.
+							</p>
+						</div>
+					</div>
+					<iframe
+						id="contact-us-map"
+						title="Map centered on Franja Liquors"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.884935037208!2d-73.91113318432662!3d40.698531746375785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c2485153c1b%3A0xe7d3c261be2bf259!2sFranja%20Wines%20%26%20Liquors!5e0!3m2!1sen!2sus!4v1679520378337!5m2!1sen!2sus"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>COPYRIGHT © 2023 FRANJA LIQUORS - ALL RIGHTS RESERVED.</p>
+		</div>
+		<script src="main.js"></script>
+		<script src="scripts/banner.js"></script>
+		<script src="scripts/hours.js"></script>
+		<script src="scripts/slideshow.js"></script>
+		<script src="scripts/reviews.js"></script>
+	</body>
 </html>
