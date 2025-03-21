@@ -52,6 +52,12 @@
 					"store": "9am - 10:30pm",
 					"delivery": false
 				}
+			},
+			"2025": {
+				"03-23": {
+					"store": "12 pm -  7 pm",
+					"delivery": false
+				}
 			}
 		}
 	}
