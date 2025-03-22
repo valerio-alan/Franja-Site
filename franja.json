@@ -14,8 +14,8 @@
 			"Tue": "12 pm - 10 pm",
 			"Wed": "12 pm - 10 pm",
 			"Thu": "12 pm - 10 pm",
-			"Fri": "11 am - 10 pm",
-			"Sat": "11 am - 10 pm"
+			"Fri": "11 am - 11 pm",
+			"Sat": "11 am - 11 pm"
 		},
 		"deliveryHours": {
 			"Sun": false,
