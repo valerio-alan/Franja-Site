@@ -57,6 +57,10 @@
 				"03-23": {
 					"store": "12 pm -  7 pm",
 					"delivery": false
+				},
+				"04-18": {
+					"store": "11 am - 10 pm",
+					"delivery": "12 pm - 9 pm"
 				}
 			}
 		}
