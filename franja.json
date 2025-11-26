@@ -62,7 +62,7 @@
 					"store": "11 am - 10 pm",
 					"delivery": "12 pm - 9 pm"
 				},
-				"11/27": {
+				"11-27": {
 					"store": "10 am -  9 pm",
 					"delivery": false
 				}
