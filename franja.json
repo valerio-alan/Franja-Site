@@ -1,6 +1,6 @@
 {
 	"banner": {
-		"text": "",
+		"text": "Christmas Eve: 9am-9pm<br/>Christmas: Closed!",
 		"link": ""
 	},
 	"hours": {
@@ -64,6 +64,10 @@
 				},
 				"11-27": {
 					"store": "10 am -  8 pm",
+					"delivery": false
+				},
+				"12-24": {
+					"store": " 9 am -  9 pm",
 					"delivery": false
 				}
 			}
