@@ -1,6 +1,6 @@
 {
 	"banner": {
-		"text": "",
+		"text": "1/25: Closed due to snow storm",
 		"link": ""
 	},
 	"hours": {
@@ -73,6 +73,11 @@
 				"12-31": {
 					"store": "10 am - 11 pm",
 					"delivery": false
+				}
+			},
+			"2026": {
+				"01-25": {
+					"closed": true
 				}
 			}
 		}
